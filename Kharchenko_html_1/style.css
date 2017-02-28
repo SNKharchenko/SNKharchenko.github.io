@@ -1,0 +1,34 @@
+div {
+	width: 50%; 
+	margin: 0 auto;
+	font-family: 'Myriad Pro';
+}
+
+h1 { 
+	width: 100%; 
+	text-indent: 30px;
+	font-family: 'Myriad Pro';
+	text-transform: uppercase; /* Все символы текста становятся прописными */
+	font-weight: bold;
+}
+
+.img {
+	text-indent: 150px;	/*Устанавливает величину отступа первой строки блока */
+}
+
+.center {
+	padding: 0px 30px;
+}
+
+.page {
+	padding: 0px 30px;
+	color: #007FFF;
+	font-style: italic;
+}
+
+hr {
+	background-color: #E6E6FA; /* Цвет Горизонтальной линии */
+	height: 1px; /* Толщина линии */
+	width: 100%; 
+	opacity: 0.5;
+}
