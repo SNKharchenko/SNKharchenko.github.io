@@ -5,9 +5,9 @@
 
 body {
 	display: block;
-	margin: 0px 152px 0px 152px;
+	margin: 0 152px 0 152px;
 	background: gray; 
-	font-family: 'Open Sans';
+	font-family: 'News Gothic SB Roman', 'Tee Franklin Medium', 'Guarda Sans', sans-serif;
 	height: 950px;
 	width: 1060px;
 }
@@ -26,48 +26,67 @@ li{
 	list-style-type: none;
 }
 
+a {
+	text-decoration: none;
+}
+
 .menu {
 	background: linear-gradient(to top right, #454444, #5e5e5e);
 	height: 40px;
-	width: 100%;
+	width: 966px;
+	text-align: justify;
 }
 
 .menu a{
 	color: #ffffff;
-	text-decoration: none;
+	width: 100px;
+	height: 100%;
+	display: block;
+	text-align: center;
+	padding-top: 10px;
 }
 
 .menu li {
 	display: inline-block;
-	position: relative;
-	padding: 10px 85px 10px 10px;
+	position: relative; 
+	width: 100px;
+	height: 100%;
 }
 
-.menu li:nth-child(2){
+.menu a:hover {
+	background: #393939; /* Цвет фона под ссылкой */ 
+	color: #ffffff;	/* Цвет ссылки */ 
 	border: 1px solid #838383;
-	background-color: #393939;
-	display: inline-block;
-	height: 45%;
+	display: block; /* Ссылка как блочный элемент */
+	height: 70%;
 }
 
 .left_menu{
 	width: 240px;
 	height: 240px;
 	margin-top: 40px;
-	padding: 10px 10px 10px 0px;
+	padding: 10px 10px 10px 0;
 	float: left;
+	vertical-align: middle;
 }
 
-.left_menu li{
+.left_menu li {
 	border: 1px solid #c8c8c8;
-	padding-left: 20px;
 	height: 38px;
 }
 
-.left_menu li:nth-child(3){
-	border: 1px solid #c8c8c8;
+.left_menu li a {
+	height: 72%;
+	color: #656363;
+	display: block; /* Ссылка как блочный элемент */  
+	text-indent: 20px;
+	padding-top: 10px;
+}
+
+.left_menu a:hover{
 	background-color: #f9f9f9;
 	padding-left: 35px;
+	color: #575757;
 }
 
 img{
@@ -111,7 +130,7 @@ span{
 	text-decoration: none;
 }
 
-.links li:nth-child(2){
+.links a:hover{
 	text-decoration: underline;
 }
 
