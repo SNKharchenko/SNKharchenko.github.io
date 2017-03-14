@@ -37,7 +37,7 @@ header{
     color: #128aa7;
     float: left;
     height: 60px;
-    margin-top: 43px;
+    margin-top: 53px;
     margin-left: 20px;
     padding-top: 100px;
     text-align: center;
@@ -59,15 +59,60 @@ header{
     float: right;
     height: 93px;
     width: 50%;
-    text-indent: 45px;
 }
 
-.parent-element{
-    background: url(result.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 79px;
-    padding-left: 0;
+.india{
+    background: url(result_1.png) 0 0 no-repeat;
+    float: left; 
+    height: 50px;
+    width: 50px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.nepal{
+    background: url(result_1.png) 0 -52px no-repeat;
+    float: left; 
+    height: 50px;
+    width: 50px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.tibet{
+    background: url(result_1.png) 0 -104px no-repeat;
+    float: left; 
+    height: 50px;
+    width: 50px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.butan{
+    background: url(result_1.png) 0 -156px no-repeat;
+    float: left; 
+    height: 50px;
+    width: 50px;
+    padding-left: 10px;
+    margin-top: 10px;  
+}
+
+.lanka{
+    background: url(result_1.png) 0 -208px no-repeat;
+    float: left; 
+    height: 50px;
+    width: 50px;
+    padding-left: 10px;
+    margin-top: 10px; 
+}
+
+.maldives_flag{
+   background: url(result_1.png) 0 -260px no-repeat;
+    float: left; 
+    height: 50px;
+    width: 50px;
+    padding-left: 10px;
+    margin-top: 10px;  
 }
 
 .samecountry{ 
@@ -81,12 +126,13 @@ header{
     width: 70px;
     white-space: nowrap;
     text-align: justify;
-    margin-left: -17px;
+    margin-left: 13px;
 }
     
 .maldives{
     float: left;
     width: 60px;
+    margin-left: 23px;
 }
 
 .countries a{
@@ -94,7 +140,8 @@ header{
     clear: both;
     text-decoration: underline;
     display: inline-block;
-    margin-top: 60px;
+    margin-top: 45px;
+    margin-left: -40px;
 }
 
 .photo{
