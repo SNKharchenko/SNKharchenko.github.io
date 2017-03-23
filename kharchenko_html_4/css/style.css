@@ -7,9 +7,8 @@ body{
 }
 
 .background{
-   background: url(img.jpg), center, repeat-x;
-   border-width: 1px;
-   width: 100%;  
+   background: url(../img/img.png), repeat-x;
+   height: 1024px;
 }
 
 li{
@@ -34,7 +33,7 @@ header{
 }
 
 .logo{
-    background: url(img_3.jpg),no-repeat; /* Путь к фоновому изображению */
+    background: url(../img/img_3.jpg),no-repeat; /* Путь к фоновому изображению */
     color: #128aa7;
     float: left;
     height: 60px;
@@ -77,33 +76,33 @@ header{
 }
 
 .india{
-    background: url(result_1.png) 0 0 no-repeat; 
+    background: url(../img/result_1.png) 0 0 no-repeat; 
     text-indent: -13px;
 }
 
 .nepal{
-    background: url(result_1.png) 0 -52px no-repeat;
+    background: url(../img/result_1.png) 0 -52px no-repeat;
     text-indent: -12px; 
 }
 
 .tibet{
-    background: url(result_1.png) 0 -104px no-repeat;
+    background: url(../img/result_1.png) 0 -104px no-repeat;
     text-indent: -11px;
 }
 
 .butan{
-    background: url(result_1.png) 0 -156px no-repeat;
+    background: url(../img/result_1.png) 0 -156px no-repeat;
     text-indent: -11px;
 }
 
 .lanka{
-    background: url(result_1.png) 0 -208px no-repeat;
+    background: url(../img/result_1.png) 0 -208px no-repeat;
     white-space: nowrap;
     text-indent: -29px;
 }
 
 .maldives_flag{
-    background: url(result_1.png) 0 -260px no-repeat;
+    background: url(../img/result_1.png) 0 -260px no-repeat;
     text-indent: -25px;
 }
 

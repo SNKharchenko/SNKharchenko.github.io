@@ -61,7 +61,7 @@ a{
 }
 
 .menu_flag{
-    background: url(img-3.jpg) 5px 5px no-repeat;
+    background: url(../img/img-3.jpg) 5px 5px no-repeat;
     border-left: 2px solid #56a2dc;
     box-sizing: border-box;
     color: #ffffff;
@@ -94,7 +94,7 @@ a{
 }
 
 .Background{
-    background: url(img-4.jpg), center, repeat-x; 
+    background: url(../img/img-4.jpg), center, repeat-x; 
     clear: both;
     height: 1030px;
     position: absolute;
