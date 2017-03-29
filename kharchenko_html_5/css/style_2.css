@@ -1,6 +1,7 @@
 @font-face{
     font-family: 'Helvetica Neue';
-    src: url('fonts/helveticaneue-black-webfont.woff2') format('woff2'), url('fonts/helveticaneue-black-webfont.woff') format('woff');
+    src: url('../fonts/helveticaneue-medium-webfont.woff2') format('woff2'),
+    url('../fonts/helveticaneue-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -29,7 +30,7 @@ li{
     background: #074e8c;
     box-sizing: border-box;
     height: 35px;
-    padding-left: 410px;
+    padding-left: 405px;
     position: relative;
     width: 1215px;
 }
@@ -48,11 +49,10 @@ a{
     box-sizing: border-box;
     color: #4e9ed5;
     display: block;
-    height: 36px;
-    margin-right: -5px;
+    height: 35px;
     padding-top: 10px;
-    padding-left: 12px;
-    padding-right: 7px; 
+    padding-left: 10px;
+    padding-right: 5px; 
 }
 
 .menu li a:hover{
@@ -60,37 +60,46 @@ a{
     color: #ffffff;
 }
 
-.menu_flag{
-    background: url(../img/img-3.jpg) 5px 5px no-repeat;
+.flag{
+    background: url(../img/img-3.jpg) 7px 5px no-repeat;
     border-left: 2px solid #56a2dc;
-    box-sizing: border-box;
-    color: #ffffff;
+    display: block;
     float: left;
     height: 35px;
-    margin-left: 7px;
-    padding-left: 10px;
-    padding-top: 10px; 
-    text-align: center;
-    width: 160px;    
+    margin-left: 30px;
+    width: 30px;
 }
 
-.menu_ola{
-    color: #ffffff;
-    display: inline-block;
+.menu_flag{
+    border: 1px solid transparent;
     float: left;
-    line-height: 35px;
+    font-size: 15px;
+    line-height: 33px;
     text-align: center;
-    width: 220px;
+    width: 120px;    
 }
 
-.menu_ola button[type=button]{
+.menu div:hover{
     background: #48a2d6;
     border: 1px solid #479bd4;
-    color: #ffffff; 
-    height: 35px;
-    position: absolute;
-    margin-left: -100px;
-    width: 220px;
+}
+
+
+.menu_ola{
+    border: 1px solid transparent;
+    float: left;
+    font-size: 15px;
+    line-height: 33px;
+    text-align: center;
+    width: 195px;
+}
+
+.menu_ola a:hover{
+    text-decoration: underline;
+}
+
+.menu div span, a {
+   color: #ffffff;    
 }
 
 .Background{
@@ -174,7 +183,6 @@ p input[type=text]{
 
 p input[type=checkbox]{
     height: 13px;
-    margin-left: -15px;
     padding-top: 20px;
     width: 13px;
 }
