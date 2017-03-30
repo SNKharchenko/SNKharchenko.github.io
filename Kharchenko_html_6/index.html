@@ -7,22 +7,28 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="wroper">
+        <div class="wrapper">
             <address>
-                <span class="telephone">(044)123-45-67 (044)567-89-10</span>
+                <div class="telephone">
+                    <a href="#">(044)123-45-67</a>
+                    <a href="#">(044)567-89-10</a>
+                </div>
                 <div class="avtiriz">
                     <form>
                         <p><input  name="login" placeholder="логин"></p>
                         <p><input type="password" name="password" placeholder="пароль"></p>
-                        <p><input type="submit" value="вход | регистрация"></p>
                     </form>
-                    <a href="#">забыли пароль?</a>
+                    <div class="input">
+                        <a href="#">вход</a>
+                        <a href="#">регистрация</a>
+                        <a href="#">забыли пароль?</a>
+                    </div>
                     <div class="navi"></div>
                 </div>
                 <div class="back">
-                    <span class="home"></span>
-                    <span class="map"></span>
-                    <span class="envelope"></span>
+                    <a href="#" class="home"></a>
+                    <a href="#" class="map"></a>
+                    <a href="#" class="envelope"></a>
                 </div>
             </address>
             <header class="menu">
@@ -36,7 +42,7 @@
                     <li><a href="#">СТАТЬИ</a></li>
                     <li><a href="#">КОНТАК</a></li>
                 </ul>
-                <form class="koshyk">
+                <form class="basket">
                     <p>товаров:
                         <input type="text" name="text" value="0">
                     </p>
@@ -162,14 +168,14 @@
                     <label><input type="checkbox" name="tableteg" value="бренд">Бренд 1</label><br />
                     <label><input type="checkbox" name="tableteg" value="бренд">Бренд 3</label><br />
                     <label><input type="checkbox" name="tableteg" value="бренд">Бренд 4</label>
-                    <p>ДИСКИ:</p>
+                    <p class="brend_disck">ДИСКИ:</p>
                     <label><input type="checkbox" name="tableteg" value="бренд">Бренд 1</label><br />
                     <label><input type="checkbox" name="tableteg" value="бренд">Бренд 3</label><br />
                     <label><input type="checkbox" name="tableteg" value="бренд">Бренд 4</label>
                     <div><button type="submit" value="выбрать">ВЫБРАТЬ</button></div>
                 </form>
             </aside>
-            <main class="tovar">
+            <main class="goods">
                 <figure class="one">
                     <figcaption><span>Goodyear</span> Ultra Grip Extreme  </figcaption>
                     <p class="imgone"></p>

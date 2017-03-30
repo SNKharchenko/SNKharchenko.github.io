@@ -8,7 +8,7 @@ body{
     width: 1000px;
 }
 
-.wroper{
+.wrapper{
     height: 100%;
     position: absolute;
     left: 45px;
@@ -25,13 +25,17 @@ address{
 
 .telephone{
     background: url(../img/img-3.png) 7px 0 no-repeat;
-    color: #5e696d;
     font-family: Arial;
 	font-size: 17px;
     float: left;
     height: 21px;
     padding-left: 30px;
     width: 285px;
+}
+
+.telephone a{
+    text-decoration: none;
+    color: #5e696d;
 }
 
 .avtiriz{
@@ -42,7 +46,8 @@ address{
     float: left;
     height: 26px;
     padding-left: 24px;
-    margin-top: -5px;
+    position: relative;
+    top: -5px;
     text-align: center;
     width: 470px;
 }
@@ -53,9 +58,10 @@ address{
     display: inline-block;
     float: left;
     height: 13px;
-    margin-top: -10px;
+    position: relative;
+    top: -11px;
     text-align: justify;
-    font-size: 7px;
+    font-size: 9px;
     width: 114px;  
 }
 
@@ -72,14 +78,35 @@ address{
     font-family: 'Lucida Sans Unicode', sans-serif;
 }
 
-.avtiriz a{
-    color: #bfbfbf;
-    display: block;
-    font-size: 10px;
+.input{
+    float: left;
+    font-size: 11px;
+    position: relative;
+    margin-left: 5px;
+    left: 0px;
+    top: -11px;
+}
+
+.input a{
     font-style: normal;
-    font-family: 'Lucida Sans Unicode', sans-serif;
-    margin-top: -10px;
-    padding-top: 3px;
+}
+
+.input a:first-child{
+    border-right: 1px solid #ffffff;
+    color: #ffffff;
+    font-style: normal;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+.input a:nth-child(2){
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.input a:last-child{
+    color: #bfbfbf;
+    margin-left: 26px;
 }
 
 .back{
@@ -88,46 +115,43 @@ address{
     display: inline-block;
     float: left;
     height: 19px;
-    margin-left: 17px;
+    margin-left: 15px;
     position: relative;
-    text-align: center;
-    top: -2px;
-    width: 73px;
+    text-align: justify;
+    top: -3px;
+    width: 75px;
 }
 
 .home:before{
-    background: url(../img/img-3.png) 3px -60px no-repeat;
+    background: url(../img/img-3.png) 0 -60px no-repeat;
     content: '';
     display: block;
     height: 19px;
-    left: 0;
-    margin-top: -6px;
+    left: 5px;
     position: absolute;
-    top: 50%;
+    top: 2px;
     width: 16px;   
 }
 
 .map:before{
-    background: url(../img/img-3.png) 3px -80px no-repeat;
+    background: url(../img/img-3.png) 0 -82px no-repeat;
     content: '';
     display: block;
     height: 19px;
-    left: 20px;
-    margin-top: -6px;
+    left: 26px;
+    top: 4px;
     position: absolute;
-    top: 50%;
     width: 16px;    
 }
 
 .envelope:before{
-    background: url(../img/img-3.png) 3px -100px no-repeat;
+    background: url(../img/img-3.png) 0 -100px no-repeat;
     content: '';
     display: block;
     height: 19px;
-    left: 40px;
-    margin-top: -6px;
+    left: 48px;
     position: absolute;
-    top: 50%;
+    top: 4px;
     width: 16px;   
 }
 
@@ -146,7 +170,7 @@ nav{
     border: 1px solid #2c345a;
     display: inline-block;
     height: 32px;
-    padding-left: 88px;
+    padding-left: 86px;
     position: relative;
     width: 910px;
 }
@@ -154,59 +178,60 @@ nav{
 nav li{
     display: inline-block;
     float: left;
-    line-height: 26px;
-    margin-top: -14px;
-    margin-right: -12px;
+    height: 25px;
+    position: relative;
+    padding-top: 6px;
+    top: -15px;
 }
 
 nav li a{
+    box-sizing: border-box;
     color: #a2acb0;
-    padding: 8px 18px 8px 18px;
+    padding: 8px 10px 8px 18px;
     text-decoration: none;
 }
 
-nav ul>li:first-child{
+nav ul>li:hover{
     border-radius: 13px;
 	background-color: #13486b;
     text-align: center;
-    width: 130px;
 }
 
-.koshyk{
+.basket{
     background: url(../img/img-3.png) 0 -111px no-repeat;
     color: #868e92;
     display: inline-block;
     float:left;
+    font-size: 11px;
     height: 32px;
-    left: 650px;
+    left: 686px;
     position: absolute;
-    padding-left: 21px;
-    top: 0;
+    padding-left: 26px;
+    top: -3px;
 }
 
-.koshyk input[name="text"]{
+.basket input[name="text"]{
     border: none;
     background-color: #1c1f22;
     color: #0d5a8f;
-    line-height: 12px;
+    line-height: 11px;
     width: 8px;  
 }
 
-.koshyk input[name="ntext"]{
+.basket input[name="ntext"]{
     border: none;
     background-color: #1c1f22;
     color: #0d5a8f;
-    line-height: 12px;
+    line-height: 11px;
     width: 57px;
 }
 
-.koshyk p:last-child{
-   margin-top: -36px;
-   margin-left: 100px;
-}
-
-.koshyk p{
-    margin-top: 5px;
+.basket p:last-child{
+   position: absolute;
+   left: 95px;
+   top: 0;
+   width: 120px;
+   
 }
 
 .findPoAvto{
@@ -218,10 +243,10 @@ nav ul>li:first-child{
     float: left;
     height: 135px;
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 11px;
     margin-left: 5px;
     position: relative;
-    width: 417px;
+    width: 415px;
 }
 
 .findPoAvto h4{
@@ -249,7 +274,6 @@ nav ul>li:first-child{
 
 .findPoAvto select{
     box-shadow: inset 1px 1px 1px rgba(0,0,0,.75);
-    margin-top: -40px;
     margin-left: 10px;
 }
 
@@ -307,7 +331,7 @@ nav ul>li:first-child{
     border:none;
     position: absolute;
     left: 68px;
-    margin-top: -9px;
+    margin-top: -15px;
 }
 
 .tires p{
@@ -315,7 +339,7 @@ nav ul>li:first-child{
     font-size: 10px;
     font-weight: bold;
     position: relative;
-    left: 140px;
+    left: 135px;
 }
 
 .findTires{
@@ -326,8 +350,8 @@ nav ul>li:first-child{
     border: solid 1px #9c9c9d;
     float:left;
     height: 138px; 
-    margin-top: 6px;
-    margin-right: 10px;
+    margin-top: 8px;
+    margin-right: 7px;
     position: relative;
     width: 194px; 
 }
@@ -386,7 +410,7 @@ nav ul>li:first-child{
 .findTires select[name=menu12]{
     box-shadow: inset 1px 1px 5px rgba(0,0,0,.75);
     height: 17px;
-    margin: 0px;
+    margin: 0;
     width: 45px;
 }
 
@@ -407,7 +431,6 @@ nav ul>li:first-child{
     font-size: 12px;
 }
 
-
 .sizon input[type="checkbox"]{
 	box-shadow: inset 1px 1px 1px rgba(0,0,0,.75);
     border:none;
@@ -415,7 +438,6 @@ nav ul>li:first-child{
     width: 9px;
     height: 10px;
 }
-
 
 .findDisc{
     border-radius: 18px 17px 17px 18px;
@@ -425,17 +447,17 @@ nav ul>li:first-child{
     box-sizing: border-box;
     float:left;
     height: 138px; 
-    margin-top: 7px;
+    margin-top: 8px;
     position: relative;
-    width: 266px; 
+    width: 267px; 
 }
 
 .findDisc h4{
     color: #154467;
     font-size: 15px;
     position: absolute;
-    top: -20px;
-    left: 10px;
+    top: -18px;
+    left: 7px;
 }
 
 .dick_find{
@@ -443,17 +465,18 @@ nav ul>li:first-child{
     font-size: 9px;
     float: left;
     position: absolute;
-    top: 30px;
+    left: 5px;
+    top: 26px;
     word-wrap: break-word;
-    width: 140px;
+    width: 170px;
 }
 
 .dick_find2{
     font-size: 9px;
     float: left;
     position: absolute;
-    top: 30px;
-    left: 170px;
+    top: 7px;
+    left: 180px;
     word-wrap: break-word;
     width: 80px;  
 }
@@ -471,6 +494,7 @@ nav ul>li:first-child{
     display: block;
     float: left;
     margin-left: 10px;
+    margin-right: 24px;
     word-wrap: break-word;
     width: 67px;
 }
@@ -490,6 +514,7 @@ nav ul>li:first-child{
     box-shadow: inset 1px 1px 1px rgba(0,0,0,.75);
     border: none;
     height: 17px;
+    margin-top: 10px;
     width: 58px;
 }
 
@@ -497,26 +522,25 @@ nav ul>li:first-child{
     position: relative;
     float:left; 
     top: 0;
-    left: -427px;
     width: 180px;   
 }
 .menu_katalog h4{
-    background: url(../img/img-3.png) 0 -146px no-repeat;
+    background: url(../img/img-3.png) 0 -145px no-repeat;
     border-radius: 12px 12px 13px 13px;
     box-shadow: 2px 3px 3px rgba(150,150,150,.75);
 	border: solid 1px #79878d;
     box-sizing: border-box;
     color: #114165;
     font-size: 12px;
-    height: 25px;
-    padding-top: 5px;
-    padding-left: 10px;
+    height: 26px;
+    padding-top: 6px;
+    padding-left: 12px;
     text-align: center;
     width: 181px;
 }
 
 .menu_katalog span{
-    background: url(../img/img-3.png) 0 -177px no-repeat;
+    background: url(../img/img-3.png) 4px -177px no-repeat;
     border-radius: 12px 12px 13px 13px;
     border: solid 1px #79878d;
     box-sizing: border-box;
@@ -524,11 +548,14 @@ nav ul>li:first-child{
     display: block;
     font-size: 12px;
     font-weight: bold;
-    height: 26px;
-    padding-left: 25px;
-    padding-top: 5px;
-    margin-left: -20px;
-    width: 148px;
+    height: 27px;
+    left: -24px;
+    position: relative;
+    padding-left: 28px;
+    padding-top: 7px;
+    margin-bottom: 20px;
+    top: 9px;
+    width: 150px;
 }
 
 .menu_katalog .tyre >li:first-child{
@@ -544,14 +571,17 @@ nav ul>li:first-child{
 }
 
 .menu_katalog li{
-    margin-left: -20px;
-    margin-top: 4px;
+    position: relative;
+    left: -13px;
+    font-size: 14px;
+    margin-bottom: 12px;
+    top: -9px;
+    width: 130px;
 }
 
 .menu_katalog li a{
     color: #465961;
-    margin-top: 15px;
-    text-decoration: none;  
+    text-decoration: none;
 }
 
 .menu_katalog li a:hover{
@@ -559,6 +589,24 @@ nav ul>li:first-child{
     font-weight: bold;
     font-style: italic;
     text-decoration: underline;
+}
+.disk{
+    position: relative;
+    margin-bottom: 14px;
+    top: -33px;
+}
+
+.disk li{
+    margin-bottom: 11px;
+}
+
+.bolts{
+    position: relative;
+    top: -65px;
+}
+
+.bolts li{
+    margin-bottom: 12px;
 }
 
 .brend{
@@ -568,7 +616,7 @@ nav ul>li:first-child{
     width: 181px; 
 }
 
-.brend h4{background: url(../img/img-3.png) 0 -146px no-repeat;
+.brend h4{background: url(../img/img-3.png) 3px -146px no-repeat;
     border-radius: 12px 12px 13px 13px;
     box-shadow: 2px 3px 3px rgba(150,150,150,.75);
 	border: solid 1px #79878d;
@@ -576,8 +624,8 @@ nav ul>li:first-child{
     color: #114165;
     font-size: 12px;
     height: 25px;
-    padding-top: 5px;
-    padding-left: 25px;
+    padding-top: 4px;
+    padding-left: 29px;
     width: 181px;
 }
  
@@ -590,16 +638,19 @@ nav ul>li:first-child{
     display: block;
     font-size: 12px;
     font-weight: bold;
-    height: 26px;
+    height: 27px;
     padding-left: 29px;
     padding-top: 5px;
-    margin-left: 10px;
-    width: 148px;
+    margin-left: 15px;
+    width: 137px;
 }
 
 .brend label{
     color: #869095;
-    margin-left: 15px; 
+    font-size: 13px;
+    margin-left: 25px;
+    position: relative;
+    top: -10px; 
 }
 
 .brend input[type=checkbox]{
@@ -608,11 +659,16 @@ nav ul>li:first-child{
     color: #465961;
     height: 8px;
     font-size: 10px;
-    margin-top: 12px;
-    margin-right: 30px;
+    margin-top: 11px;
+    margin-right: 16px;
     width: 8px;
 }
 
+.brend_disck{
+    position: relative;
+    margin-top: 11px;
+    left: -2px;
+}
 
 .brend button[type=submit]{
     border-radius: 11px;
@@ -621,27 +677,28 @@ nav ul>li:first-child{
     color: #e5e9ea;
     font-size: 13px;
     height: 27px;
-    margin-top: 20px;
-    margin-left: 29px;
+    margin-top: 19px;
+    margin-left: 25px;
     text-align: center;
     width: 80px;
 }
 
-.tovar{
+.goods{
     background: #a9b8bf;
+    box-sizing: border-box;
     height: 628px;
     position: absolute;
     margin-top: 160px;
     margin-left: 192px;
-    width: 527px;
+    width: 528px;
 }
 
 .one{
     height: 180px;
     float: left; 
-    margin-top: 10px;
+    margin-top: 6px;
     margin-left: 23px;
-    margin-right: 8px;
+    margin-right: 5px;
     text-align: center;
     width: 139px;  
 }
@@ -650,207 +707,229 @@ nav ul>li:first-child{
     background: url(../img/img-1.png) 0 0 no-repeat;
     height: 128px;
     margin-bottom: 5px;
+    position: relative;
+    top: -20px;
     width: 138px;
 }
 
-.tovar figcaption span{
+.goods figcaption span{
     color: #206988;
     display: block;
     font-size: 15px;
     font-weight: bold;
     text-align: center;
     word-wrap: break-word;
-    width: 138px; 
+    width: 130px; 
 }
 
 .one figcaption{
     font-size: 14px;
-    margin-bottom: -18px;
+    padding: 5px;
 }
 
-.tovar a{
+.goods a{
     color: #114165;
     font-style: italic;
     font-size: 14px;
     font-weight: bolder;
+    position: relative;
     text-align: center;
     text-decoration: none;
+    top: -25px;
 }
 
 .two{
     height: 180px;
     float: left; 
-    margin-top: 10px;
+    margin-top: 6px;
     margin-left: 23px;
-    margin-right: 8px;
+    margin-right: 6px;
     text-align: center;
     width: 139px;  
 }
 
 .two p{
-    background: url(../img/img-1.png) 0 -137px no-repeat;
+    background: url(../img/img-1.png) 0 -136px no-repeat;
     height: 128px;
     margin-bottom: 5px;
+    position: relative;
+    top: -20px;
     width: 138px;
 }
 
 .two figcaption{
     font-size: 14px;
-    margin-bottom: -18px;
+    padding: 5px;
 }
 
 .three{
     height: 180px;
     float: left;
-    margin-top: 10px;
+    margin-top: 6px;
     margin-left: 23px;
-    margin-right: 8px;
+    margin-right: 5px;
     text-align: center;
     width: 139px;  
 }
 
 .three p{
-    background: url(../img/img-1.png) 0 -274px no-repeat;
+    background: url(../img/img-1.png) 0 -276px no-repeat;
     height: 128px;
     margin-bottom: 5px;
+    position: relative;
+    top: -20px;
     width: 138px;
 }
 
 .three figcaption{
     font-size: 14px;
-    margin-bottom: -18px;
+    padding: 5px;
 }
 
 .four{
     height: 180px;
     float: left;
-    margin-top: 10px;
+    margin-top: 7px;
     margin-left: 23px;
-    margin-right: 8px;
+    margin-right: 5px;
     text-align: center;
     width: 139px;  
 }
 
 .four p{
-    background: url(../img/img-1.png) 0 -411px no-repeat;
+    background: url(../img/img-1.png) -1px -412px no-repeat;
     height: 128px;
     margin-bottom: 5px;
+    position: relative;
+    top: -20px;
     width: 138px;
 }
 
 .four figcaption{
     font-size: 14px;
-    margin-bottom: -18px;
+    padding: 5px;
 }
 
 .five{
     height: 180px;
     float: left;
-    margin-top: 10px;
+    margin-top: 6px;
     margin-left: 23px;
-    margin-right: 8px;
+    margin-right: 5px;
     text-align: center;
     width: 139px;  
 }
 
 .five p{
-    background: url(../img/img-1.png) 0 -549px no-repeat;
+    background: url(../img/img-1.png) -2px -552px no-repeat;
     height: 128px;
     margin-bottom: 5px;
+    position: relative;
+    top: -20px;
     width: 138px;
 }
 
 .five figcaption{
     font-size: 14px;
-    margin-bottom: -18px;
+    padding: 5px;
 }
 
 .six{
     height: 180px;
     float: left;
-    margin-top: 10px;
+    margin-top: 6px;
     margin-left: 23px;
-    margin-right: 8px;
+    margin-right: 0;
     text-align: center;
     width: 139px;  
 }
 
 .six p{
-    background: url(../img/img-1.png) 0 -687px no-repeat;
+    background: url(../img/img-1.png) 0 -689px no-repeat;
     height: 128px;
     margin-bottom: 5px;
+    position: relative;
+    top: -20px;
     width: 138px;
 }
 
 .six figcaption{
     font-size: 14px;
-    margin-bottom: -18px;
+    padding: 5px;
 }
 
 .seven{
     height: 180px;
     float: left;
-    margin-top: 10px;
-    margin-left: 23px;
-    margin-right: 8px;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 20px;
+    margin-right: 5px;
     text-align: center;
-    width: 139px;  
+    top: 405px;
+    width: 138px;  
 }
 
 .seven p{
-    background: url(../img/img-1.png) 0 -825px no-repeat;
+    background: url(../img/img-1.png) 2px -825px no-repeat;
     height: 128px;
     margin-bottom: 5px;
+    position: relative;
+    top: -20px;
     width: 138px;
 }
 
 .seven figcaption{
     font-size: 14px;
-    margin-bottom: -18px;
+    padding: 5px;
 }
 
 .eight{
     height: 180px;
     float: left;
-    margin-top: 10px;
+    margin-top: 6px;
     margin-left: 23px;
-    margin-right: 8px;
+    margin-right: 5px;
     text-align: center;
-    width: 139px;  
+    width: 138px;  
 }
 
 .eight p{
     background: url(../img/img-1.png) 0 -963px no-repeat;
     height: 128px;
     margin-bottom: 5px;
+    position: relative;
+    top: -20px;
     width: 138px;
 }
 
 .eight figcaption{
     font-size: 14px;
-    margin-bottom: -18px;
+    padding: 5px;
 }
 
 .nine{
     height: 180px;
     float: left;
-    margin-top: 10px;
+    margin-top: 6px;
     margin-left: 23px;
-    margin-right: 8px;
+    margin-right: 5px;
     text-align: center;
-    width: 139px;  
+    width: 138px;  
 }
 
 .nine p{
-    background: url(../img/img-1.png) 0 -1101px no-repeat;
+    background: url(../img/img-1.png) 2px -1101px no-repeat;
     height: 128px;
     margin-bottom: 5px;
+    position: relative;
+    top: -20px;
     width: 138px;
 }
 
 .nine figcaption{
     font-size: 14px;
-    margin-bottom: -18px;
+    padding: 5px;
 }
 
 .brandLogo{
@@ -869,7 +948,7 @@ nav ul>li:first-child{
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 120px;
-    top: 220px;
+    top: 130px;
     width: 730px;    
 }
 
@@ -878,8 +957,8 @@ footer{
 	border: solid 1px #242a3c;
 	height: 99px;
     position: relative;
-    left: 5px;
-    top: 235px;
+    left: 0;
+    top: 140px;
     text-align: center;
     width: 908px;
 }
@@ -887,7 +966,7 @@ footer{
 footer li{
     display: inline-block;
     list-style-type: none;
-    margin-right: 13px;
+    margin-right: 12px;
     text-align: center;
 }
 
@@ -896,9 +975,11 @@ footer li a{
     color: #8d989f;
     height: 14px;
     padding-right: 12px;
+    position: relative;
     font-size: 13px;
     text-decoration: none;
     text-align: center;
+    top: -10px;
 }
 
 .nav_footer li:last-child a{
@@ -912,5 +993,7 @@ footer li a:hover{
 footer div{
     color: #6b4444;
     font-size: 9px;
+    position: relative;
+    top: -15px;
 }
 
