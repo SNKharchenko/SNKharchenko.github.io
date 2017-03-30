@@ -177,22 +177,25 @@ nav{
 
 nav li{
     display: inline-block;
+    box-sizing: border-box;
     float: left;
-    height: 25px;
+    height: 32px;
     position: relative;
     padding-top: 6px;
-    top: -15px;
+    top: -16px;
 }
 
 nav li a{
+    border: 1px solid transparent;
     box-sizing: border-box;
     color: #a2acb0;
-    padding: 8px 10px 8px 18px;
+    padding: 4px 12px 4px 12px;
+    margin-right: 3px;
     text-decoration: none;
 }
 
 nav ul>li:hover{
-    border-radius: 13px;
+    border-radius: 18px;
 	background-color: #13486b;
     text-align: center;
 }
