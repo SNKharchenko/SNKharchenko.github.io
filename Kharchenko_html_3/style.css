@@ -1,142 +1,130 @@
-* {	 
-	margin: 0; 
+*{
+    margin: 0; 
 	padding: 0;
-}
-
-body {
-	display: block;
-	margin: 0 152px 0 152px;
-	background: gray; 
-	font-family: 'News Gothic SB Roman', 'Tee Franklin Medium', 'Guarda Sans', sans-serif;
-	height: 950px;
-	width: 1060px;
-}
-
-.bg {
-	background: #ffffff;
-	padding: 50px 45px 60px 48px;
-}
-
-.header {
-	height: 38px;
-	padding-bottom: 40px;
-}
-
-li {
-	list-style-type: none;
-}
-
-a {
-	text-decoration: none;
-}
-
-.menu {
-	background: linear-gradient(to top right, #454444, #5e5e5e);
-	height: 40px;
-	width: 966px;
-   /* overflow: hidden;
-    position: relative;*/
-}
-
-.menu a {
-	color: #ffffff;
-	width: 105px;
-    height: 40px;
-	display: block;
-	text-align: center;
-	padding-top: 10px; 
-    border: 1px solid transparent;
     box-sizing: border-box;
 }
 
-.menu li {
-	display: inline-block;
-	width: 100px;
-	height: 40px;
-    /*float: left;*/
+body{
+	background: gray; 
+	font-family: 'News Gothic SB Roman', 'Tee Franklin Medium', 'Guarda Sans', sans-serif;
 }
 
-.menu a:hover {
-	background: #393939; /* Цвет фона под ссылкой */ 
-	color: #ffffff;	/* Цвет ссылки */ 
-    border: 1px solid #838383;
-}
-     
-.left_menu {
-	width: 240px;
-	height: 240px;
-	margin-top: 40px;
-	padding: 10px 10px 10px 0;
-	float: left;
-	vertical-align: middle;
+.background{
+    width: 1060px;
+	background: #ffffff;
+	padding: 45px;
+    margin: 0 auto;
 }
 
-.left_menu li {
-	border: 1px solid #c8c8c8;
-	height: 38px;
+.logo{
+	font-size: 40px;
+    margin-bottom: 40px;
 }
 
-.left_menu li a {
-	height: 75%;
-	color: #656363;
-	display: block; /* Ссылка как блочный элемент */  
-	text-indent: 20px;
-	padding-top: 10px;
+li{
+	list-style-type: none;
 }
 
-.left_menu a:hover {
-	background-color: #f9f9f9;
-	padding-left: 35px;
-	color: #575757;
-}
-
-img {
-	height: 307px;
-	width: 500px;
-}
-
-.frame {
-	position: relative;
-	text-align: center;
-	height: 400px;
-	width: 678px;
-	display: inline-block;
-	border: 1px solid #ffffff;
-	margin-top: 50px;
-	padding-top: 47px;
-}
-
-span {
-	display: block;
-	padding-left: 280px;
-	padding-bottom: 63px;
-}
-
-.footer {
-	background-color: #e1e1e1;
-	height: 40px;
-	width: 100%;
-}
-
-.links li {
-	display: inline-block;
-	position: relative;
-	padding: 10px 85px 10px 10px;
-	color: #515151;
-	float: left;
-}
-
-.links a {
-	color: #515151;
+a{
 	text-decoration: none;
 }
 
-.links a:hover {
-	text-decoration: underline;
+.menu{
+	background: linear-gradient(to top right, #454444, #5e5e5e);
+	width: 970px;
+    font-size: 0;
 }
 
-.footer div {
-	color: #515151;
-	text-align: right;
-	padding: 10px;
+.menu-item{
+	display: inline-block;
+	width: 12%;
 }
+
+.menu-link{
+	color: #ffffff;
+	display: block;
+    height: 40px;
+	line-height: 40px;
+    font-size: 15px;
+	text-align: center;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    border: 1px solid transparent;
+}
+
+.menu-link:hover{
+	background: #393939; /* Цвет фона под ссылкой */ 
+    border-color: #838383;
+}
+
+.container{
+    padding-top: 40px;
+}
+     
+.left_menu{
+    display: inline-block;
+	width: 240px;
+    vertical-align: top;
+}
+
+.left_menu-item {
+	border: 1px solid #c8c8c8;
+}
+
+.left_menu-link {
+	color: #656363;
+	display: block; /* Ссылка как блочный элемент */
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+	text-indent: 20px;
+}
+
+.left_menu-link:hover {
+	background-color: #f9f9f9;
+	padding-left: 35px;
+	color: #2c2c2c;
+}
+
+.main{
+    display: inline-block;
+    width: 725px;
+    text-align: center;
+    
+}
+.frame{
+    display: inline-block;
+    border: 1px solid #c8c8c8;
+    padding: 30px;
+}
+
+.image-text{
+    color: #2c2c2c;
+	text-align: justify;
+    font-size: 13px;
+    padding: 30px 30px 50px 50px;
+}
+
+.footer{
+	background: #e1e1e1;
+}
+
+.nav-link{
+	color: #2c2c2c;
+    text-shadow: none;
+}
+
+.nav-link:hover {
+	text-decoration: underline;
+    background: none; 
+    border-color: transparent;
+}
+
+.copyright{
+    display: inline-block;
+    color: #2c2c2c;
+    font-size: 15px;
+    vertical-align: top;
+    margin: -28px;
+    margin-left: 780px;
+}
+
