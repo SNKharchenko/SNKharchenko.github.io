@@ -15,7 +15,7 @@ body{
     width: 1215px;
 }
 
-.wroper{
+.wrapper{
     height: 1057px;
     position: absolute;
     top: 60px;
@@ -59,31 +59,31 @@ a{
     background: #4eabda;
     color: #ffffff;
 }
+.menu-line{
+    border-right: 2px solid #56a2dc;
+}
+
 
 .flag{
-    background: url(../img/img-3.jpg) 7px 5px no-repeat;
-    border-left: 2px solid #56a2dc;
-    display: block;
+    background: url(../img/img-3.png) 7px 5px no-repeat;
     float: left;
-    height: 35px;
-    margin-left: 30px;
+    height: 34px;
+    margin-left: 15px;
     width: 30px;
 }
 
 .menu_flag{
     border: 1px solid transparent;
     float: left;
-    font-size: 15px;
     line-height: 33px;
     text-align: center;
-    width: 120px;    
+    width: 180px;    
 }
 
 .menu div:hover{
     background: #48a2d6;
     border: 1px solid #479bd4;
 }
-
 
 .menu_ola{
     border: 1px solid transparent;
@@ -161,15 +161,13 @@ input{
     width: 276px;
 }
 
-.name input[type=button]{
-    background: #1b5288;
+.name input[type=text]{
     border-bottom: 1px solid #689bcc;
-    padding-left: 18px;
     text-align: left; 
 }
 
-.name input[type=button]:focus,
-.name input[type=button]:hover{
+.name input[type=text]:focus,
+.name input[type=text]:hover{
     background: rgb(27,82,136);
     box-shadow:
     0 0 2px 3px rgba(104,155,205,0.5),
