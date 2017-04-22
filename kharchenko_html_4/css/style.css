@@ -1,14 +1,12 @@
 body{
-    display: block;
     font-family: 'Tahoma', sans-serif;
-    height: 1040px;
-    margin: 0 auto;
-    width: 1280px;
+    min-height: 100vh;
 }
 
 .background{
-   background: url(../img/img.png), repeat-x;
-   height: 1024px;
+    background: linear-gradient(to bottom, #1297b8 0%,#1297b8 3%,#1396b4 3%,#1196b5 3%,#1299b9 3%,#0f95b8 3%,#1297ba 3%,#1495b5 3%,#0e89a8 4%,#138ca7 4%,#138aa8 6%,#138ba4 6%,#118aa7 6%,#5defff 6%,#17ccdf 6%,#0cd0e0 6%,#13cce0 7%,#18cde2 7%,#12d0e0 7%,#16cfe3 7%,#1bd0e1 7%,#1fd0e4 8%,#21d0e3 8%,#36d6e6 9%,#46d8e7 10%,#4edae9 10%,#57dbe8 11%,#63dfeb 11%,#74e3ee 12%,#8ee6f0 13%,#92e9f3 14%,#a2ebf2 14%,#cbf4f8 16%,#e1f9fd 18%,#e7f9fb 18%,#ebfaff 18%,#f1fdfd 19%,#fafeff 20%,#fffdff 20%,#fdfcff 20%,#f9fffb 20%,#fffff8 20%,#fffcff 20%,#46c5ce 20%,#39c6d8 20%,#43c5d2 20%,#3abdcf 23%,#1c9eb8 30%,#1c9dba 30%,#199ab7 31%,#1798b7 32%,#1192b1 34%,#0f8aac 55%,#1086aa 61%,#0e84a8 62%,#0e84aa 64%,#0e82a7 65%,#0f80a8 71%,#0d7da5 74%,#0e7ea6 76%,#0c79a2 83%,#0e79a3 85%,#0b76a0 88%,#0c739e 100%);
+    width: 1280px;
+    margin: 0 auto;
 }
 
 li{
@@ -25,203 +23,209 @@ a{
     height: 991px;
     margin: 0 auto;
     width: 1000px;
+    overflow: hidden;
 }
 
-header{
-    display: block;
-    width: 100%;
+.header{
+    color: #128aa7;
+    padding: 20px 20px 0 20px;
+    height: 186px;
 }
 
 .logo{
-    background: url(../img/img_3.jpg),no-repeat; /* Путь к фоновому изображению */
-    color: #128aa7;
+    background: url(../img/img_3.jpg) no-repeat; /* Путь к фоновому изображению */
     float: left;
-    height: 60px;
-    margin-top: 53px;
-    margin-left: 20px;
+    height: 70px;
     padding-top: 100px;
+    margin-bottom: 0;
     text-align: center;
-    width: 27%;  
+    width: 300px;  
 }
 
 .contacts{
-    color: #128aa7;
     float: right;
-    height: 88px;
-    line-height: 20px;
     text-align: left;
-    width: 30%; 
+    padding: 0;
+    margin-bottom: 20px;
 }
 
-.contacts li{
-    text-indent: 70px;
+.contacts-item{
+    width: 180px;
 }
 
-.countries{	
-    font-size: small;
-    float: right;
-    height: 100%;
-    width: 48%; 
+.contacts-item:first-child{
+    font-weight: bold;
 }
 
-.parent-element li{
-    text-decoration: underline; 
-    color: #128aa7;
-    padding-top: 39px;
-    min-height: 100%;
-    margin-top: 10px;
-    padding-left: 16px;
+.contacts-link{
+    display: block;
+    color: #128aa7;  
+}
+
+.country{	
+    clear: right;
+    margin-left: 545px;
+    height: 60px;
+}
+
+.country-item{
     float: left;
-    width: 50px; 
 }
 
-.india{
-    background: url(../img/result_1.png) 0 0 no-repeat; 
-    text-indent: -13px;
+.country-item a{
+    display: block;
+    color: #128aa7;
+    text-decoration: underline; 
+    font-size: 12px;
+    text-align: center;
+    padding-top: 40px; 
 }
 
-.nepal{
-    background: url(../img/result_1.png) 0 -52px no-repeat;
-    text-indent: -12px; 
+.india-link{
+    background: url(../img/result_1.png) 5px 0 no-repeat;
+    width: 60px;
 }
 
-.tibet{
-    background: url(../img/result_1.png) 0 -104px no-repeat;
-    text-indent: -11px;
+.nepal-link{
+    background: url(../img/result_1.png) 6px -52px no-repeat; 
+     width: 60px;
 }
 
-.butan{
-    background: url(../img/result_1.png) 0 -156px no-repeat;
-    text-indent: -11px;
+.tibet-link{
+    background: url(../img/result_1.png) 6px -104px no-repeat;
+    width: 60px;
 }
 
-.lanka{
-    background: url(../img/result_1.png) 0 -208px no-repeat;
+.butan-link{
+    background: url(../img/result_1.png) 6px -156px no-repeat;
+    width: 60px;
+}
+
+.lanka-link{
+    background: url(../img/result_1.png) 7px -208px no-repeat;
     white-space: nowrap;
-    text-indent: -29px;
+    width: 70px;
 }
 
-.maldives_flag{
-    background: url(../img/result_1.png) 0 -260px no-repeat;
-    text-indent: -25px;
+.maldives-link{
+    background: url(../img/result_1.png) 5px -260px no-repeat;
+    width: 60px;
 }
 
-.photo img{
+.photo{
+    display: block;
     border-top: 1px solid #128aa7;
-    clear: both;
-    height: 239px;
-    width: 1000px;
 }
 
 .center_panel{
     background: #343434;
     box-shadow: 0 10px 6px -6px #4f4f50;
     border-bottom: 1px solid #000000;
-    height: 30px;
-    margin-top: -4px;
+}
+
+.menu{
+   margin: 0;
+   height: 30px;
+}
+
+.menu-item{
+    float: left;
+    width: 12%;
     position: relative;
-    padding-left: 30px;
+    text-align: center;
+    margin-left: 10px; 
 }
 
-.center_panel ul{
-    margin: 0 auto; 
+.clearfix:after{
+	display: block;
+	content: '';
+	visibility: hidden;
+	clear: both;
 }
 
-.center_panel a{
-    box-sizing: border-box;
+.menu-link{
+    display: block;
     color: #ffffff;
-    height: 30px;
-    padding: 10px;
-    position: relative;
+    height: 29px;
+    line-height: 29px;
     font-size: 14px;
-}
-
-.text{
-    padding: 5px;
-    width: 1018px;
-}
-
-.text li {
-    display: inline;
-    position: relative;
-    padding-right: 30px;
+    border: 1px solid transparent;
+    padding-left: 5px;
 }
 
 .dropdown{
-    background: #313131;
     box-shadow: 0 8px 10px #474747;
-    color: #ffffff;
     display: none;
     position: absolute; /*position:absolute ведёт отсчёт координат позиционирования от  position:relative, от угла этого тега.*/
     padding: 0;
     left: 0; 
+}
+.dropdown-item{
+    width: 120px;
+}
+
+.dropdown-link{
+    background: #313131;
+    height: 20px;
     line-height: 20px;
-    text-align: left;
+    text-align: center;
 }
 
-.dropdown a{
-    color: #ffffff;
-    padding-top: inherit;
-}
-
-.text li:hover .dropdown { /* ¬ыводим выпадающий пункт при наведении курсора */
+.menu-item:hover .dropdown { /* ¬ыводим выпадающий пункт при наведении курсора */
     display: block; /*спрятать наше выпадающее меню */
-    padding-top: 7px;
 }
 
-.text>li:nth-child(n+2):nth-child(-n+4):after{
-    border: 4px solid transparent; 
-    border-top: 6px solid #fff;  
+.menu>li:nth-child(n+2):nth-child(-n+4):after{
+    border: 5px solid transparent; 
+    border-top: 7px solid #fff;  
     content: "";
     color: #fff;
     height: 0;
     position: absolute;
-    right: 20px;
-    top: 8px;
-    width: 0;   
+    right: 0;
+    top: 14px;  
 }
 
-h3{
+.block-header{
   font-size: 14px; 
+  text-align: center;
 }
 
 .left_block{
     background: #edeef0;
     border: 1px solid #c7cacf;
-    color: #424c43;
     float: left;
-    font-size: 14px;
-    min-height: 506px;
-    line-height: 20px;
-    text-align: center;
-    width: 20%;
-    overflow: hidden;
+    min-height: 515px;
 }
 
 .block{
     padding: inherit;
 }
 
-.right_block{
+.block-link{
     display: block;
-    background: #edeef0;
-    border: 1px solid #c7cacf;
     color: #424c43;
-    float: right;
     font-size: 14px;
-    min-height: 506px;
-    padding: 0 15px 0 0;
-    line-height: 20px;
     text-align: center;
-    width: 20%;
-    overflow: hidden;
+    width: 209px;
+    line-height: 18px;
 }
 
-footer div{
+.right_block{
+    background: #edeef0;
+    border: 1px solid #c7cacf;
+    float: right;
+    min-height: 515px;
+}
+
+.right-link{
+    padding: 0 15px 0 0;
+}
+
+.footer{
+    clear: both;
     color: #ffffff;
-    font-size: small;
-    padding-top: 10px;
+    font-size: 14px;
     text-align: center;
-    width: 1280px;
-    height: 20px;
+    height: 25px;
 }
