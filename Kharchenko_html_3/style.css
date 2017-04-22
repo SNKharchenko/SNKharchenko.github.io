@@ -57,7 +57,7 @@ a{
 }
 
 .container{
-    padding-top: 40px;
+    padding: 40px 0 50px 0;
 }
      
 .left_menu{
@@ -91,6 +91,7 @@ a{
     text-align: center;
     
 }
+
 .frame{
     display: inline-block;
     border: 1px solid #c8c8c8;
@@ -101,11 +102,19 @@ a{
     color: #2c2c2c;
 	text-align: justify;
     font-size: 13px;
-    padding: 30px 30px 50px 50px;
+    padding: 30px 40px 0 50px;
 }
 
 .footer{
 	background: #e1e1e1;
+}
+
+.footer-nav{
+    display: inline-block;
+    width: 80%
+}
+.nav-item{
+    width: 15%;
 }
 
 .nav-link{
@@ -123,8 +132,6 @@ a{
     display: inline-block;
     color: #2c2c2c;
     font-size: 15px;
-    vertical-align: top;
-    margin: -28px;
-    margin-left: 780px;
+    width: 20%;
 }
 
