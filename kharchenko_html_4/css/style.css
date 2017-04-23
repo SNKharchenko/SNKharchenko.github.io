@@ -1,12 +1,12 @@
 body{
     font-family: 'Tahoma', sans-serif;
     min-height: 100vh;
+    background: linear-gradient(to bottom, #1297b8 0%,#1297b8 3%,#1396b4 3%,#1196b5 3%,#1299b9 3%,#0f95b8 3%,#1297ba 3%,#1495b5 3%,#0e89a8 4%,#138ca7 4%,#138aa8 6%,#138ba4 6%,#118aa7 6%,#5defff 6%,#17ccdf 6%,#0cd0e0 6%,#13cce0 7%,#18cde2 7%,#12d0e0 7%,#16cfe3 7%,#1bd0e1 7%,#1fd0e4 8%,#21d0e3 8%,#36d6e6 9%,#46d8e7 10%,#4edae9 10%,#57dbe8 11%,#63dfeb 11%,#74e3ee 12%,#8ee6f0 13%,#92e9f3 14%,#a2ebf2 14%,#cbf4f8 16%,#e1f9fd 18%,#e7f9fb 18%,#ebfaff 18%,#f1fdfd 19%,#fafeff 20%,#fffdff 20%,#fdfcff 20%,#f9fffb 20%,#fffff8 20%,#fffcff 20%,#46c5ce 20%,#39c6d8 20%,#43c5d2 20%,#3abdcf 23%,#1c9eb8 30%,#1c9dba 30%,#199ab7 31%,#1798b7 32%,#1192b1 34%,#0f8aac 55%,#1086aa 61%,#0e84a8 62%,#0e84aa 64%,#0e82a7 65%,#0f80a8 71%,#0d7da5 74%,#0e7ea6 76%,#0c79a2 83%,#0e79a3 85%,#0b76a0 88%,#0c739e 100%);
 }
 
-.background{
-    background: linear-gradient(to bottom, #1297b8 0%,#1297b8 3%,#1396b4 3%,#1196b5 3%,#1299b9 3%,#0f95b8 3%,#1297ba 3%,#1495b5 3%,#0e89a8 4%,#138ca7 4%,#138aa8 6%,#138ba4 6%,#118aa7 6%,#5defff 6%,#17ccdf 6%,#0cd0e0 6%,#13cce0 7%,#18cde2 7%,#12d0e0 7%,#16cfe3 7%,#1bd0e1 7%,#1fd0e4 8%,#21d0e3 8%,#36d6e6 9%,#46d8e7 10%,#4edae9 10%,#57dbe8 11%,#63dfeb 11%,#74e3ee 12%,#8ee6f0 13%,#92e9f3 14%,#a2ebf2 14%,#cbf4f8 16%,#e1f9fd 18%,#e7f9fb 18%,#ebfaff 18%,#f1fdfd 19%,#fafeff 20%,#fffdff 20%,#fdfcff 20%,#f9fffb 20%,#fffff8 20%,#fffcff 20%,#46c5ce 20%,#39c6d8 20%,#43c5d2 20%,#3abdcf 23%,#1c9eb8 30%,#1c9dba 30%,#199ab7 31%,#1798b7 32%,#1192b1 34%,#0f8aac 55%,#1086aa 61%,#0e84a8 62%,#0e84aa 64%,#0e82a7 65%,#0f80a8 71%,#0d7da5 74%,#0e7ea6 76%,#0c79a2 83%,#0e79a3 85%,#0b76a0 88%,#0c739e 100%);
-    width: 1280px;
+.wrapper{
     margin: 0 auto;
+    width: 1000px;
 }
 
 li{
@@ -18,54 +18,53 @@ a{
 }
 
 .white_main{
-    background: #ffffff;
+    background-color: #ffffff;
     box-shadow: 0 10px 10px #03202c;
-    height: 991px;
     margin: 0 auto;
-    width: 1000px;
-    overflow: hidden;
 }
 
 .header{
-    color: #128aa7;
-    padding: 20px 20px 0 20px;
-    height: 186px;
+    padding: 45px 20px 0 20px;
 }
 
 .logo{
+    display: block;
     background: url(../img/img_3.jpg) no-repeat; /* Путь к фоновому изображению */
     float: left;
-    height: 70px;
-    padding-top: 100px;
-    margin-bottom: 0;
+    font-size: 14px;
+    color: #128aa7;
+    height: 165px;
+    line-height: 200px;
     text-align: center;
     width: 300px;  
 }
 
-.contacts{
+.contact{
     float: right;
-    text-align: left;
-    padding: 0;
-    margin-bottom: 20px;
+    font-size: 14px;
 }
 
-.contacts-item{
-    width: 180px;
+.contact-menu{
+    margin: 0;
+    padding-left: 0; 
 }
 
-.contacts-item:first-child{
+.contact-header{
+    color: #128aa7;
     font-weight: bold;
+    margin: 0;
 }
 
-.contacts-link{
+.contact-link{
     display: block;
-    color: #128aa7;  
+    color: #128aa7;
+    line-height: 20px;
 }
 
 .country{	
     clear: right;
-    margin-left: 545px;
-    height: 60px;
+    float: right;
+    margin: 30px 10px 0 0;
 }
 
 .country-item{
@@ -82,27 +81,27 @@ a{
 }
 
 .india-link{
-    background: url(../img/result_1.png) 5px 0 no-repeat;
+    background: url(../img/result_1.png) 7px 0 no-repeat;
     width: 60px;
 }
 
 .nepal-link{
-    background: url(../img/result_1.png) 6px -52px no-repeat; 
+    background: url(../img/result_1.png) 7px -52px no-repeat; 
      width: 60px;
 }
 
 .tibet-link{
-    background: url(../img/result_1.png) 6px -104px no-repeat;
+    background: url(../img/result_1.png) 7px -104px no-repeat;
     width: 60px;
 }
 
 .butan-link{
-    background: url(../img/result_1.png) 6px -156px no-repeat;
+    background: url(../img/result_1.png) 8px -156px no-repeat;
     width: 60px;
 }
 
 .lanka-link{
-    background: url(../img/result_1.png) 7px -208px no-repeat;
+    background: url(../img/result_1.png) 10px -208px no-repeat;
     white-space: nowrap;
     width: 70px;
 }
@@ -121,19 +120,20 @@ a{
     background: #343434;
     box-shadow: 0 10px 6px -6px #4f4f50;
     border-bottom: 1px solid #000000;
+    position: relative;
+    z-index: 10;
 }
 
 .menu{
    margin: 0;
-   height: 30px;
 }
 
 .menu-item{
     float: left;
-    width: 12%;
+    width: 13%;
     position: relative;
     text-align: center;
-    margin-left: 10px; 
+    margin-left: 8px; 
 }
 
 .clearfix:after{
@@ -186,46 +186,57 @@ a{
     top: 14px;  
 }
 
-.block-header{
-  font-size: 14px; 
-  text-align: center;
-}
-
-.left_block{
-    background: #edeef0;
-    border: 1px solid #c7cacf;
-    float: left;
-    min-height: 515px;
-}
-
-.block{
-    padding: inherit;
-}
-
-.block-link{
-    display: block;
+.block-wrapper{
+    background-color: #edeef0;
     color: #424c43;
     font-size: 14px;
     text-align: center;
+    line-height: 24px;
+}
+
+.block-header{
+    font-size: 16px; 
+    text-align: center;
+    margin: 10px 0 5px 0; 
+}
+
+.block{
+   margin: 0 0 5px 0;
+}
+
+.left_block{
+    height: 547px;
+    background-color: #edeef0;
+    border-right: 1px solid #c7cacf;
+    float: left;
     width: 209px;
-    line-height: 18px;
+}
+
+.center_block{
+    height: 547px;
+    width: 580px;
+    float: left;
+    background-color: #ffffff;
 }
 
 .right_block{
-    background: #edeef0;
-    border: 1px solid #c7cacf;
+    background-color: #edeef0;
+    height: 547px;
+    border-left: 1px solid #c7cacf;
     float: right;
-    min-height: 515px;
+    width: 209px;
+    overflow: hidden;
 }
 
-.right-link{
-    padding: 0 15px 0 0;
+.right-side{
+    padding: 0 10px 0 0; 
 }
 
 .footer{
-    clear: both;
+    clear: left;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
-    height: 25px;
+    line-height: 25px;
+    margin: 0;
 }
