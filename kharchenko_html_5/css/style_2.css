@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face{
     font-family: 'Helvetica Neue';
     src: url('../fonts/helveticaneue-medium-webfont.woff2') format('woff2'),
@@ -7,18 +13,15 @@
 }
 
 body{
-    display: block;
+    min-height: 100vh;
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    height: 1057px;
-    margin: 0 auto;
-    top: 60px;
-    width: 1215px;
+    font-size: 14px;
+    background: url(../img/img-4.jpg) no-repeat;
+    color: #ffffff;
 }
 
 .wrapper{
-    height: 1057px;
-    position: absolute;
-    top: 60px;
+    min-height: 100vh;
     width: 1215px;
 }
 
@@ -27,127 +30,208 @@ li{
 }
 
 .menu{
+    float: left;
     background: #074e8c;
-    box-sizing: border-box;
-    height: 35px;
-    padding-left: 405px;
-    position: relative;
     width: 1215px;
+    padding-left: 230px;
 }
 
-.menu li{
+.clearfix:after{
+	display: block;
+	content: '';
+    clear: both;
+	visibility: hidden;  
+}
+
+.menu-nav{
+    float: left;
+    width: 600px;
+    position: relative;
+}
+
+.menu-item{
+    float: left;
     color: #4e9ed5;
+    width: 20%;
+    text-align: center;
+}
+
+.menu-item:last-child:after{
     display: inline-block;
-    float: left;  
+	content: '';
+	width: 1px;
+	height: 30px;
+	background-color: #56a2dc;
+    position: absolute;
+    top: 10%;
+    left: 100%;
 }
 
 a{
     text-decoration: none;
+    color: #ffffff; 
 }
 
-.menu li a{
-    box-sizing: border-box;
+.menu-link{
     color: #4e9ed5;
     display: block;
     height: 35px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 5px; 
+    line-height: 35px;
 }
 
-.menu li a:hover{
+.menu-link:hover{
     background: #4eabda;
     color: #ffffff;
 }
-.menu-line{
-    border-right: 2px solid #56a2dc;
-}
 
-
-.flag{
-    background: url(../img/img-3.png) 7px 5px no-repeat;
-    float: left;
-    height: 34px;
-    margin-left: 15px;
-    width: 30px;
+.fa-flag{
+    padding-top: 2px;
+    float: left;;
 }
 
 .menu_flag{
-    border: 1px solid transparent;
     float: left;
-    line-height: 33px;
-    text-align: center;
-    width: 180px;    
+    width: 155px;
+    margin-left: 20px;
 }
 
-.menu div:hover{
+.flag_link{
+    display: block;
+    height: 35px;
+    line-height: 35px; 
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.flag_link:hover,
+.menu_ola:hover{
     background: #48a2d6;
-    border: 1px solid #479bd4;
+    border: solid 1px #449ad3;
 }
 
 .menu_ola{
-    border: 1px solid transparent;
     float: left;
-    font-size: 15px;
-    line-height: 33px;
-    text-align: center;
-    width: 195px;
+    border: 1px solid transparent;
 }
 
-.menu_ola a:hover{
+.ola_link{
+    float: left;
+    width: 80px;
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.ou_link{
+    width: 100px;
+}
+
+.link:after{
+    content: 'Entrar';
     text-decoration: underline;
 }
 
-.menu div span, a {
-   color: #ffffff;    
+.ou_link:after{
+    content: 'Cadastre-se';
+    text-decoration: underline;
+    clear: left;
 }
 
-.Background{
-    background: url(../img/img-4.jpg), center, repeat-x; 
-    clear: both;
-    height: 1030px;
+.background{
     position: absolute;
-    width: 1215px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 560px; 
+}
+
+.form-header{
+    border-bottom: 2px solid rgba( 190, 199, 180, 0.6);
+    background: rgba(69, 78, 80, 0.5); 
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    margin-bottom: 3px;
 }
 
 form{
     background: rgba(69, 78, 80, 0.5); 
     color: #ffffff;
-    height: 613px;
-    position: absolute;
-    left: 50%;
-    margin: -280px 0 0 -280px;
-    top: 50%;
-    text-align: center; 
-    width: 560px;
+    height: 580px;
+    text-align: center;
+    padding-top: 35px;  
 }
 
-h3{
-    border-bottom: 2px solid rgba( 190, 199, 180, 0.6);
-    padding-bottom: 10px;
-
-}
-
-.face input{
+.facebook{
     border-top: 1px solid #7789b7;
     border-radius: 5px;
-    height: 35px;
+    background-color: #334b87;
     width: 276px;
-}
-
-fieldset{
-    border-top: 2px groove threedface;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    width: 240px;
+    text-align: center;
     margin: 0 auto;
 }
 
-legend{
+.fa-facebook{
+    float: left;
+    width: 30px;
+    padding-top: 1px;
+}
+
+.facebook-link:before {
+    float: left;
+	content: '';
+	width: 1px;
+	height: 30px;
+	background-color: #4c68a9;
+}
+
+.fa-chevron-right {
+    float: left;
+    padding-top: 10px;
+    height: 30px; 
+}
+
+.facebook-link{
+    border-left: 1px solid #7789b7;
+    float: left;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    width: 200px;
+}
+
+fieldset{
+    border: none;
+    width: 240px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.legend{
+    margin: 0 auto;
     color: #999999;
-    padding: 5px;
-    text-align: center;
+    width: 280px;
+}
+
+.legent_line:before{
+  margin-right: 10px;
+  display: inline-block;
+  width: 117px;
+  height: 2px;
+  content: "";
+  vertical-align: middle;
+  background: linear-gradient(to bottom, #666666 0%,#000000 100%);
+}
+
+.legent_line:after{
+  margin-left: 10px;
+  display: inline-block;
+  width: 117px;
+  height: 2px;
+  content: "";
+  vertical-align: middle;
+  background: linear-gradient(to bottom, #666666 0%,#000000 100%);
 }
 
 input{
@@ -155,55 +239,50 @@ input{
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #474747;
     color: #cccccc;
     height: 35px;
     width: 276px;
+    margin-top: 15px; 
 }
 
-.name input[type=text]{
+.user{
     border-bottom: 1px solid #689bcc;
-    text-align: left; 
+    border: none;
+    text-indent: 18px;
 }
 
-.name input[type=text]:focus,
-.name input[type=text]:hover{
+.user:focus,
+.user:hover{
     background: rgb(27,82,136);
     box-shadow:
     0 0 2px 3px rgba(104,155,205,0.5),
     0 0 1px 3px rgba(0,0,0,0.1);
 } 
 
-p input[type=text]{
-    border: none;
-    text-indent: 18px;
-}
-
-p input[type=checkbox]{
+input[type=checkbox]{
     height: 13px;
-    padding-top: 20px;
     width: 13px;
+    margin-right: 16px;
 }
 
 label{
     color: rgba(255,255,255, 0.9);
-    padding-left: 5px;
-    padding-top: 15px;
-    padding-bottom: 20px;
+    text-align: center;
 }
 
-p button[type=submit]{
+button[type=submit]{
     color: rgb(255,255,255);
     background-color: #48a3d7;
     border: 1px solid #6bb8e7;
     border-radius: 2px;
     height: 35px;
+    margin-bottom: 15px;
     width: 153px; 
 }
 
 .text{
+    margin: 0 auto;
     color: rgba(255,255,255, 0.9);
-    font-size: small;
-    padding-top: 15px;
-    width: 312px;
+    font-size: 12px;
+    width: 300px;
 }

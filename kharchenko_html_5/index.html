@@ -4,44 +4,50 @@
         <title>Cadastre</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style_2.css">
+        <link rel="stylesheet" href="css/style_2.css">      
+        <script src="https://use.fontawesome.com/02921e2878.js"></script>
+
     </head>
     <body>
         <div class="wrapper">
-            <nav class="menu">
-                    <ul>
-                        <li><a href="#">Meu YouBike</a></li>
-                        <li><a href="#">Vender</a></li>
-                        <li><a href="#">Forum</a></li>
-                        <li><a href="#">Contato</a></li>
-                        <li><a href="#" class="menu-line">Ajuda</a></li>
+            <nav class="menu clearfix">
+                    <ul class="menu-nav clearfix">
+                        <li class="menu-item"><a href="#" class="menu-link">Meu YouBike</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Vender</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Forum</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Ajuda</a></li>
                     </ul>
-                    <div class="menu_flag">
-                        <span class="flag"></span>
-                        <a href="#">Minhas Ofertas</a>
+                    <div class="menu_flag clearfix">
+                        <i class="fa fa-flag fa-2x" aria-hidden="true"></i>
+                        <a href="#" class="flag_link">Minhas Ofertas</a>
                     </div>
                     <div class="menu_ola">
-                        <span>Ola!</span>
-                        <a href="#"> Entrar</a>
-                        <span>ou</span>
-                        <a href="#">Cadastre-se</a>
+                        <a href="#" class="ola_link link"> Ola! </a>
+                        <a href="#" class="ola_link ou_link">ou </a>
                     </div>
             </nav>
-            <div class="Background">
-                <form>
-                    <h3>Cadastre-se</h3>
-                    <p class="face"><input type="image" src="img/img-2.jpg" alt="text"></p>
+            <div class="background">
+                <h3 class="form-header">Cadastre-se</h3>
+                <form class="form">
+                    <div class="facebook clearfix">
+                        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                        <a href="#" class="facebook-link">Log In with Facebook</a>
+                        <i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i>
+                    </div>
                     <fieldset>
-                        <legend>OU</legend>
-                        <p class="name"><input type="text" value="First Name"></p>
-                        <p class="name"><input type="text" name="Last Name" value="Last Name"></p>
-                        <p class="name"><input type="text" name="Email Address" value="Email Address"></p>
-                        <p class="name"><input type="text" name="Choose Password" value="Choose Password"></p>
-                        <p class="name"><input type="text" name="Password Confirm" value="Password Confirm"></p>
-                        <p class="name"><label><input type="checkbox" name="send" value="send">Send me Youbike updates and tips</label></p>
-                        <p><button type="submit" value="Create my Account">Create my Account</button></p>
-                        <p class="text">By clicking the button above, you agree to the Terms of Service</p>
+                        <div class="legend">
+                            <p class="legent_line">OU</p>
+                        </div>
+                        <input type="text" name="First Name" class="user" placeholder="First Name">
+                        <input type="text" placeholder="Last Name" name="Last Name" class="user"> 
+                        <input type="text" name="Email Address" placeholder="Email Address" class="user">
+                        <input type="text" name="Choose Password" placeholder="Choose Password" class="user">
+                        <input type="text" name="Password Confirm" placeholder="Password Confirm" class="user">
+                        <label><input type="checkbox" name="send" value="send">Send me Youbike updates and tips</label>
                     </fieldset>
+                        <button type="submit" value="Create my Account">Create my Account</button>
+                        <p class="text">By clicking the button above, you agree to the Terms of Service</p>
                 </form> 
             </div>
         </div>
