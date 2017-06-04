@@ -1,0 +1,66 @@
+@media screen and (min-width: 960px) {
+
+    .wrapper{ 
+        max-width: 960px;
+    }
+
+    .logo_header{
+        display: flex;
+        justify-content: space-around;  
+    }
+
+    .menu_nav{
+        width: 600px;
+        position: relative;
+        top: 30%;
+    }
+
+    .menu_item{
+        margin-right: 1%;
+    }
+
+    .img_two{
+        background: url(../img/img-2.png) 3px 3px no-repeat; 
+    }
+
+    .img_three{
+        background: url(../img/img-2.png) 3px -62px no-repeat; 
+    }
+
+    .block_article{
+        width: 77%;
+    }
+
+    .article_img{
+        top: 12%;
+        left: 7%;
+    }
+
+    .blog_two{
+        background: url(../img/img-3.png) 0 -112px no-repeat;
+    }
+
+    .blog_three{
+        background: url(../img/img-3.png) 0 -172px no-repeat;
+    }
+
+    .page_one{
+        width: 66%;
+    }
+
+    .nav_footer{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer_menu{
+        flex-grow: 1; 
+    }
+
+    .footer_sign{
+        padding-top: 3%;
+        flex-grow: 1;
+    }
+}
+
+

@@ -1,0 +1,81 @@
+@media screen and (min-width: 768px){
+    
+    .wrapper{ 
+        max-width: 768px;
+    }
+
+    .menu_nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        visibility: visible;
+        width: 80%;
+    }
+
+    .menu_item{
+       flex-grow: 1;
+    }
+    
+    .slide_main{
+        width: 50%;
+    }
+
+    .slide p{
+        display: block;
+        font-size: 18px;
+        color: #ffffff;
+        text-align: justify;
+        padding: 2%;
+    }
+    
+    .company{
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 5%;
+        padding-right: 5%;
+    } 
+
+    .company_about{
+        margin-right: 2%;
+    }
+    
+    .company_about:last-child{
+        margin-right: 0;
+    }
+    
+    .main_group{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;      
+    }
+    
+    .main_block{
+        flex-grow: 1;
+        width: 60%; 
+    }
+    
+    .blog_section{
+        flex-grow: 1;
+        width: 40%;
+        margin-right: 6%;
+    }
+    
+    .ad_aside{
+        width: 80%;   
+    }
+    
+    .ad-link{
+       width: 16%; 
+    }
+
+    .page{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 5% 5% 0 5%;
+    }
+    
+    .page_group{
+       margin-right: 2%; 
+    } 
+}

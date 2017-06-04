@@ -1,35 +1,40 @@
-body{
-    font-family: 'LeagueGothic', 'Open Sans', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.wroper{ 
-    height: 2525px;
+body{
+    font-family: 'LeagueGothic', 'Open Sans', sans-serif;
+    min-height: 100vh;
+}
+
+.wrapper{ 
+    min-width: 320px;
     margin: 0 auto;
-    position: absolute;
-    min-width: 320px; 
-    max-width: 320px;
 }
 
 .logo{
     background: url(../img/img.png) no-repeat;
-    background-size: 100%;
-    display: flex;
-    height: 100%;
-    position: absolute;
-    width: 100%;
+    background-size: cover;
+    padding-bottom: 20px;
 }
 
-.logo_header1{
+.logo_header{
     color: #ffffff;
+    height: 140px;
     position: relative;
-    font-size: 16px;
-    font-weight: bold;
-    left: 90%;
-    top: -13px;
-    width: 100%;
 }
 
-.logo_header2{
+.header{
+    padding-top: 3%;
+    margin: 0;
+    font-size: 48px;
+    text-shadow: 0 2px 2px rgba(0,0,0,.3);
+    text-align: center;
+}
+
+.header_span{
     color: #382940; 
 }
 
@@ -41,142 +46,154 @@ a{
     text-decoration: none;  
 }
 
-.menu_nav{
+.nav{
     display: flex;
-    height: 90px;
-    position: relative;
-    border-radius: 5px;
-    left: 90%;
-    top: -30px;
-    width: 30%; 
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid rgba(5, 17, 22, 0.8);
+	border-radius: 5px;
+	overflow: hidden;
 }
 
-.menu_item1_link{
-    position: relative;
-    left: -40px;
-    width: 75px;
-    text-decoration: underline #edbfff; 
+.menu_nav{
+    margin: 0 auto;
+    visibility: hidden;
+    width: 160px;
+    box-sizing: border-box;
 }
 
 .menu_nav:hover{
+    visibility: visible;
     background: rgba(61,48,69,.8);  
 }
 
-.menu_nav li{
-    float: none;
-    height: 15px;
-}
-
-.menu_link1 ul li a{
+.menu_nav:hover .menu_link{
     display: block;
-    color:#ffffff;
-    font-size: 8px;
-    height: 100%;
-    text-align: center;
 }
 
-.menu_item1_dropdown{ 
-    display: none;
-    position: absolute; /*position:absolute ведёт отсчёт координат позиционирования от  position:relative, от угла этого тега.*/
-    left: -40px;
-    top: 14%;
-    width: 100%;
+.menu_nav:hover .menu_link--initial{
+    display: block;
+    text-shadow: none;
+    border: 0;
 }
 
-.menu_link1:hover .menu_item1_dropdown { /* ¬ыводим выпадающий пункт при наведении курсора */
-    display: block; /*спрятать наше выпадающее меню */
+.menu_item{
+    overflow: hidden;
+    background-color: rgba(54, 41, 62, 0.9);
+    border-bottom: 1px solid rgba(53, 39, 61, 0.9);
+    box-shadow: inset 0 -1px 0 rgba(105, 82, 114, 0.59);  
 }
 
-.menu_item1_dropdown a:hover{
-    border-bottom: solid 1px #edbfff;
-    background: #2b2231;
+.menu_link{
+	color: #fefefe;
+	font-size: 18px;
+	line-height: 24px;
+    height: 24px;
+	text-transform: uppercase;
+	text-decoration: none;
+    white-space: nowrap;
 }
 
-.menu_link2 {
-    display: none;
+.menu_link:hover{
+    display: block;
+    background-color: #13070C;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    border-bottom: 2px solid #edbfff;
+}
+
+.menu_link:hover menu_link--initial{
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    border-bottom: 2px solid #edbfff;
+}
+
+.menu_link--initial{
+    visibility: visible;
+    padding: 0 5px;
+    border-bottom: 2px solid #edbfff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
 }
 
 .slider{
-    border-style: none; 
-    width: 50%;
-    height: 45px;
-    left: 30%;
-    top: 1%;
-    position: absolute;
+    padding: 1px;
 }
 
-
-.slider > div{
-    float: left; 
-    overflow: hidden;
-    height: 90%;
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    transition: opacity 0.6s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
-}
-
-.slider > input:checked + label + div{
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
-}
-
-.slider input{
+.slider_cercl{
     position: relative;
-    top: 100%;
-    left: 15%;
+    top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
-.slider p{
-    text-align: left; 
+.slider_cercl input{
+    margin-right: 5px;
 }
 
-.slider_header{
+.slide{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(40,40,40,0.4);
+}
+
+.slide_main{
+    overflow: hidden;
+    text-align: center;
+    width: 70%;
+}
+
+.slide_img{
+    display: none;
+}
+
+.slider h3{ 
     color: #ffffff;
-    font-size: 14px;
-    margin-bottom: -5px;
+    font-size: 32px;
 }
 
-.slider_header_2{
+.slide p{
+    display: none;
+}
+
+.slider h4{
+    color: #edbfff;
+    font-size: 18px;
+}
+
+.slider_article{
     color: #e3b8f5;
-    font-size: 8px;   
+    font-size: 24px;   
 }
 
-.blurbs{
+.company{
     background: linear-gradient(to top, #322539, #745083);
-    height: 27%;
-    position: absolute;
-    top: 4%;
-    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }  
 
-.about_1{
+.company_about{
     box-sizing: border-box;
     color: #ffffff; 
-    height: 155px;
-    position: relative;
-    margin-bottom: 20%;
-    left: 30%;
-    top: 0;
     text-shadow: 1px 1px #0f1518;
-    width: 36%;  
+    width: 50%;
+    margin-bottom: 20px;
 }
 
-.blurbs_img{
+.company_img{
     background: url(../img/img-2.png) 3px -32px no-repeat;
     height: 33px;
     float: left;
     width: 33px;
 }
 
-.about_1 h4{
+.company_about h4{
     font-family: 'LeagueGothic';
     font-size: 18px;
     text-transform: uppercase;
 }
 
-.about_1 p{
+.company_about p{
     height: 94px;
     font-family: 'OpenSans';
     font-size: 16px;
@@ -184,43 +201,44 @@ a{
     text-align: justify;
 }
 
-.about_1 a{
+.company_link{
     font-family: 'LeagueGothic';
     font-size: 12px;
     color: #fff;
-    margin-left: 30%;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.about_1 a:hover{
+.company_link:hover{
     text-shadow: 0 0 8px rgba(255,255,255,.8);
     text-decoration: none;
 }
 
 .main{
     background: #f9f9f9;
-    height: 38%;
-    position: relative;
-    top: 32%;
-    width: 100%;
+    padding-top: 20px;
+    text-align: center;
 }
 
-.testimonials{
+.main_block{
+   position: relative;
+}
+
+.main_block > input{
     position: relative;
-    height: 320px;
-    top: 2%;
-    text-align: center;
-    left: 27%;
-    width: 40%;
+}
+
+.block_article{
+    background-color: #ffffff;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 220px;
+    width: 60%;
     overflow: hidden;
 }
 
-.testimonials > input{
-    position:relative;
-    margin-right: 5%;
-    top: 80%;
-}
-
-.testimonials > div {
+/*.block_article {
     box-shadow: 0 1px 2px rgba(0,0,0,.05);
     overflow-y: hidden;
     position: absolute;
@@ -231,186 +249,167 @@ a{
     margin-left: 10%;
     opacity: 0;
     transition: opacity 0.6s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
-}
+}*/
 
-.testimonials > input:checked + label + div {
+/*.block_article > input:checked + label + div {
     visibility: visible;
     opacity: 1;
     transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
-}
+}*/
 
-.testimonials h4{
-    font-family: 'LeagueGothic';
-    font-size: 16px;
-    margin-left:15%;
+.block_article h4{
+    padding-left: 30px;
+    font-size: 30px;
     text-transform: uppercase;
     text-shadow: 1px 1px #fff;
+    white-space: nowrap;
 }
 
-.testimonials span{
+.block_article span{
     display: block;
     color: #edbfff;  
 }
 
-.testimonials p{
-    font-family: 'OpenSans';
+.block_article p{
     font-size: 16px;
     color: #454545;
-    padding-right: 15%;
-    padding-left: 15%;
+    padding-top: 5px;
+    padding-right: 10%;
+    padding-left: 10%;
     text-align: justify;
 }
 
-.testimonials_img{
-    background: url(../img/img-3.png) 4px 8px no-repeat;
-    width: 20px;
-    height: 20%;
+.article_img{
+    background: url(../img/img-3.png) 0 0 no-repeat;
+    width: 50px;
+    height: 50px;
     position: absolute;
-    top: 9%;
+    top: 10%;
+    left: 12%;
+}
+
+.blog_section{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.blog_section h4{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.blog_section h5{
+    font-size: 16px;
+    font-weight: bold;
+    color: #454545;
+    padding-left: 25%;
+    height: 20px;
+    overflow: hidden;
+    margin-top: 3%;
+}
+
+.blog_section p{
+    font-size: 12px;
+    color: #454545;
+    padding-left: 25%;
+    height: 25px;
+    overflow: hidden;
+    padding-top: 9px;
+}
+
+.blog_item{
+    background: url(../img/img-3.png) 0 -57px no-repeat;
+    height: 15%;
+    overflow: hidden;
 }
 
 .blog_link{
-    height: 43%;
-    position: relative;
-    top: 3%;
-    width: 100%;
-}
-
-.blog_link h4{
-    font-family: 'LeagueGothic';
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.blog_link h5{
-    font-family: OpenSans;
-    font-size: 16px;
-    font-weight: bold;
-    color: #454545;
-    padding-left: 18%;
-    margin-top: 6px;
-    margin-bottom: 0;
-}
-
-.blog_link p{
-    font-family: OpenSans;
-    font-size: 16px;
-    color: #454545;
-    padding-left: 18%;
-}
-
-.blog_item1{
-    background: url(../img/img-3.png) 0 -54px no-repeat;
-    height: 15%;
-    overflow: hidden;
-}
-
-.blog_item2{
-    background: url(../img/img-3.png) 0 -114px no-repeat;
-    height: 15%;
-    overflow: hidden;
-}
-
-.blog_item3{
-    background: url(../img/img-3.png) 0 -177px no-repeat;
-    height: 15%;
-    overflow: hidden;
-}
-
-.blog_link a{
-    font-size: 18px;
+    display: block;
+    font-size: 14px;
     color: #454545;
     text-shadow: 1px 1px #fff;
     font-weight: bold;
-    padding-left: 30%;
+    text-align: right;
 }
 
 .line{
     border: solid 1px #e6e6e6;
     height: 1px;
-    position: absolute;
-    top: 70%;
-    width: 90%
+    margin-bottom: 5%;
 }
 
-.page_link{
-    height: 30%;
-    position: absolute;
+.ad_aside{
     display: inline-block;
-    top: 70%;
-    left: 20%;
-    width: 60%
+    width: 60%;
+    margin-bottom: 3%;   
 }
 
-.page_item1{
+.ad-link_one{
     background:url(../img/img-4.png) 0 0px no-repeat;
     float: left;
-    position: relative;
     height: 69px;  
     width: 50%;
 }
 
-.page_item2{
+.ad-link_two{
     background:url(../img/img-4.png) 0 -75px no-repeat;
-    float: right;
+    float: left;
     height: 69px;
-    width: 40%;
+    width: 50%;
 }
 
-.page_item3{
+.ad-link_three{
     background:url(../img/img-4.png) 0 -150px no-repeat;
     float: left;
     height: 69px;
-    margin-bottom: 10px;
-    width: 40%;
+    margin-top: 10px;
+    width: 50%;
 }
 
-.page_item4{
+.ad-link_four{
     background:url(../img/img-4.png) 0 -224px no-repeat;
-    float: right;
-    height: 65px;
-    width: 40%;
+    float: left;
+    height: 69px;
+    margin-top: 10px;
+    width: 50%;  
 }
 
-.page_item5{
+.ad-link_five{
     background:url(../img/img-4.png) 0 -298px no-repeat;
-    height: 25px;
+    height: 30px;
     float: left;
     margin-top: 10px;
-    width: 61%;
+    width: 50%;
 }
 
-.page_item6{
-    background:url(../img/img-4.png) 0 -336px no-repeat;
-    height: 65px;
+.ad-link_six{
+    background: url(../img/img-4.png) 0 -336px no-repeat;
+    height: 69px;
     float: left;
-    width: 36%;
+    width: 50%;
+    margin-top: 10px;
 }
 
-.nav{
-    background: url(../img/img-5.png) no-repeat;
-    height: 4%;
-    position: relative;
-    top: 32%;
+.nav_footer{
+    clear: both;
+    background: url(../img/img-5.png) top no-repeat;
+    background-size: cover;
 }
 
-.nav_sign{
+.footer_sign{
+    padding: 2% 0 5% 0;
     color: #fff;
+    text-align: center;
     font-size: 12px;
-    position: absolute;
-    left: 30%;
-    top: 29%;
     text-shadow: 1px 2px 2px rgba(0,0,0,.4);
 }
 
-.nav_sign span{
+.footer_sign span{
     font-weight: bold;
 }
 
 .page,
-.menu_link--modifier{
+.footer_menu{
     display: none;
 }
-
-
