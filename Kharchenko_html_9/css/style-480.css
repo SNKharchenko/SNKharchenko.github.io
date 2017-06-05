@@ -1,0 +1,142 @@
+@media screen and (min-width: 480px){
+
+    .wrapper{ 
+        min-width: 480px;
+    }
+
+    .slide_img{
+        display: block;
+        max-width: 25%;
+        top: 50px;
+    }
+
+    .slide_img img{
+        max-width: 100%; 
+        display: block;
+        margin-top: -7%;
+    }
+
+    .slide_main{
+        padding-top: 40px;
+        width: 65%;
+    }
+    
+    .article_img{
+        top: 10%;
+        left: 5%;
+    }
+    
+    .block_article h4{
+        padding-left: 3px;
+    }
+
+    .block_article span{
+        display: inline; 
+    }
+    
+    .blog_section{
+        margin: auto;
+    }
+    
+    .ad_aside{
+        width: 65%;   
+    }
+    
+    .ad-link{
+       width: 33%; 
+    }
+
+    .ad-link_three{
+        margin-top: 0;
+    }
+
+    .page{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        border-top: 1px solid #d8d8d8;
+        background: #ececec;
+        padding-top: 5%;
+        font-size: 14px;
+        color: #787878;
+        text-shadow: 1px 1px #fff;
+    }
+    
+    .page_group{
+        height: 166px;
+        overflow: hidden;
+        margin-bottom: 7%;
+        padding-top: 20px; 
+    }
+    
+    .page_three{
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    
+    .page_one{
+       margin-bottom: 20px; 
+    }
+
+    .page h5{
+        font-family: 'LeagueGothic';
+        font-size: 24px;
+        color: #454545;
+    }
+    
+    .page_span{
+        font-size: 42px;
+        color: #b9b9b9;
+        text-shadow: 0 1px #fff;
+    }
+    
+    .page_copy{
+        font-family: Georgia;
+        font-size: 16px;
+        font-style: italic;
+        color: #c5c5c5;
+        text-shadow: 1px 1px #fff;           
+    }
+    
+    .page p{
+        margin-top: 2%;
+        font-size: 16px;
+        color: #787878;
+        text-shadow: 1px 1px #fff;  
+    }
+    
+    .page_name{
+        padding-top: 0;
+    }
+    
+    .footer_menu{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        font-family: "Myriad Pro";
+        text-transform: uppercase;
+        text-shadow: 1px 2px 2px rgba(0,0,0,.4);
+        padding-top: 3%;
+        white-space: nowrap;
+    }
+
+    .footer_item{
+        margin-right: 2px;
+    }
+
+    .footer_link{
+        color: #ffffff;
+        font-size: 18px;
+    }
+    
+}
