@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tooltip</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/style2.css">
+    </head>
+    <body>             
+        <form method="post" class="form">
+            <fieldset>
+                    <label class="form_label">Firstname<input id="firstname" class="form_text" data-tooltip="Please provide your firstname."></label>
+                    <label class="form_label">Lastname<input id="lastname" class="form_text" data-tooltip="Please provide also your lastname."></label>
+                    <label class="form_label">Address<input id="address" class="form_text" data-tooltip="Your home or work address."></label>
+            </fieldset>
+            <button type="submit" value="Show help" class="button">Show help</button>
+        </form>
+        <div id="tooltip">
+		</div>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="../js/js2.js"></script>
+    </body>
+</html>
