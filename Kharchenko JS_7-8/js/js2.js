@@ -13,4 +13,10 @@ $(function () {
         $('#tooltip').hide()
     });
     
+
+   /* $('.button').on('click', function(){
+        
+       $('[data-tooltip]').show();         
+    });*/
+    
 });

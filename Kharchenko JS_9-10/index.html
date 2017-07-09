@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>checkbox</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/jquery.selectric.min.js"></script>
+        <script src="js/jquery.selectric.js"></script>
+        <script src="js/jquery.jcarousel.min.js"></script>
+        <script src="js/jquery.checkbox.js"></script>
+        <script src="js/jquery.color.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body> 
+        <form  class="jquery">
+            <fieldset>
+                <div><label class="form_label">label 1<input class="niceCheck" id="check1" type="checkbox"></label></div>
+                <div><label class="form_label" id="check2">label 2<input class="niceCheck" type="checkbox"></label></div>
+                <div><label class="form_label" id="check3">label 3<input class="niceCheck" type="checkbox" disabled checked></label></div>
+            </fieldset>
+        </form>
+        <form  class="css">
+            <fieldset>
+                <div>
+                    <input class="css-box" id="box1" type="checkbox"><label for="box1" class="form_label">label 1</label>
+                </div>
+                <div>
+                    <input id="box2" class="css-box" type="checkbox"><label for="box2" class="form_label">label 2</label>
+                </div>
+                <div>
+                    <input id="box3" class="css-box" type="checkbox" checked><label for="box3" class="form_label">label 3</label>
+                </div>
+            </fieldset>
+        </form>
+        <div class="wrapper">
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li>
+                            <img src="img/1.jpg" width="600" height="400" alt="">
+                        </li>
+                        <li>
+                            <img src="img/2.jpg" width="600" height="400" alt="">
+                        </li>
+                        <li>
+                            <img src="img/3.jpg" width="600" height="400"  alt="">
+                        </li>
+                        <li>
+                            <img src="img/4.jpg" width="600" height="400"  alt="">
+                        </li>
+                        <li>
+                            <img src="img/5.jpg" width="600" height="400"  alt="">
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="jcarousel-control-prev" href="#">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next" href="#">&rsaquo;</a>
+                <p class="jcarousel-pagination"></p>
+            </div>
+        </div>
+        <form>
+	       <select class="selectric-wrapper">
+            <option value="cat" selected="selected">Кошка</option>
+		      <option value="dog">Собака</option>
+		      <option value="mouse">Мышка</option>
+		      <option value="elephant">Слон</option>
+		      <option value="lion">Лев</option>
+		      <option value="tiger">Тигр</option>
+		  </select>
+	   </form>
+        <nav class="nav_box">
+            <ul class="menu-nav">
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Nav 1</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Nav 2</a>
+                </li>
+                <li class="menu-item dropdown">
+                    <a href="#" class="menu-link">Nav 3</a>
+                    <ul class="menu_box1 menu_box">
+                        <li class="menu-item">
+                            <a href="#" class="menu-link link-box">Nav 3.1</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link link-box">Nav 3.2</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link link-box">Nav 3.3</a>
+                        </li>
+                        <li class="menu-item dropdown">
+                            <a href="#" class="menu-link link-box">Nav 3.4</a>
+                            <ul class="menu_box2 menu_box">
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link link-box">Nav 3.4.1</a>
+                                </li>
+                                <li class="menu-item dropdown">
+                                    <a href="#" class="menu-link link-box">Nav 3.4.2</a>
+                                    <ul class="menu_box3 menu_box">
+                                        <li class="menu-item">
+                                        <a href="#" class="menu-link link-box">Nav 3.4.2.1</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-link">Nav 3.5</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Nav 4</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Nav 5</a>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>
