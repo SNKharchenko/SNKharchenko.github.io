@@ -1,7 +1,8 @@
-@media screen and (min-width: 960px) {
+@media all and (min-width: 960px){
 
     .wrapper{ 
-        max-width: 960px;
+      min-width: 960px;
+      max-width: 100%; 
     }
 
     .logo_header{
@@ -9,7 +10,7 @@
         justify-content: space-around;  
     }
 
-    .menu_nav{
+    .menu{
         width: 600px;
         position: relative;
         top: 30%;
@@ -20,11 +21,11 @@
     }
 
     .img_two{
-        background: url(../img/img-2.png) 3px 3px no-repeat; 
+        background: url(../img/sprite.png) -114px -80px no-repeat; 
     }
 
     .img_three{
-        background: url(../img/img-2.png) 3px -62px no-repeat; 
+        background: url(../img/sprite.png) -70px -70px no-repeat; 
     }
 
     .block_article{
@@ -36,14 +37,6 @@
         left: 7%;
     }
 
-    .blog_two{
-        background: url(../img/img-3.png) 0 -112px no-repeat;
-    }
-
-    .blog_three{
-        background: url(../img/img-3.png) 0 -172px no-repeat;
-    }
-
     .page_one{
         width: 66%;
     }
@@ -53,12 +46,12 @@
         justify-content: space-around;
     }
 
-    .footer_menu{
+    .menu--footer{
         flex-grow: 1; 
     }
 
     .footer_sign{
-        padding-top: 3%;
+        padding: 10px 0 0 0;
         flex-grow: 1;
     }
 }

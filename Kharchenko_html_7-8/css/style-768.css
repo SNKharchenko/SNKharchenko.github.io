@@ -1,14 +1,16 @@
-@media screen and (min-width: 768px){
+@media all and (min-width: 768px){
     
     .wrapper{ 
-        max-width: 768px;
-    }
-
-    .nav{
-	   border: inherit;
+       min-width: 768px;
+       max-width: 959px 
     }
     
-    .menu_nav{
+    .pingbull{
+        text-align: left;
+        margin-left: 15%
+    }
+    .menu{
+	    border: inherit;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -17,7 +19,7 @@
         border-radius: inherit;
     }
     
-    .menu_nav:hover{
+    .menu:hover{
         background-color: transparent;  
     }
 
@@ -29,7 +31,10 @@
     }
 
     .slide_main{
-        width: 50%;
+        width: 33%;
+        padding-top: 40px;
+        margin-right: 20px;
+        text-align: justify;
     }
 
     .slide p{
@@ -37,7 +42,16 @@
         font-size: 18px;
         color: #ffffff;
         text-align: justify;
-        padding: 2%;
+        padding: 1%;
+    }
+    .slide_main:before{
+        left: 10%;
+        top: 25%;
+    }
+
+    .slide_main:after{
+        left: 80%;
+        top: 25%;
     }
     
     .company{
@@ -79,15 +93,9 @@
     .ad-link{
        width: 16%; 
     }
-
-    .page{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 5% 5% 0 5%;
-    }
     
-    .page_group{
-       margin-right: 2%; 
-    } 
+    .pingbull--mod{
+        text-align: left;
+        margin-left: 0;
+    }
 }

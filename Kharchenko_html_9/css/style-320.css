@@ -5,6 +5,14 @@
         box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'LeagueGothic';
+    src: url('../fonts/league_gothic-webfont.woff2') format('woff2'),
+         url('../fonts/league_gothic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     font-family: 'LeagueGothic', 'Open Sans', sans-serif;
     min-height: 100vh;
@@ -12,11 +20,12 @@ body{
 
 .wrapper{ 
     min-width: 320px;
+    max-width: 479px;
     margin: 0 auto;
 }
 
 .logo{
-    background: url(../img/img.png) no-repeat;
+    background: url(../img/bg.png) no-repeat;
     background-size: cover;
     padding-bottom: 20px;
 }
@@ -27,15 +36,15 @@ body{
     position: relative;
 }
 
-.header{
-    padding-top: 3%;
+.pingbull{
+    padding-top: 15px;
     margin: 0;
-    font-size: 42px;
+    font-size: 48px;
     text-shadow: 0 2px 2px rgba(0,0,0,.3);
     text-align: center;
 }
 
-.header_span{
+.pingbull_span{
     color: #382940; 
 }
 
@@ -47,7 +56,7 @@ a{
     text-decoration: none;  
 }
 
-.nav{
+.menu{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -63,39 +72,35 @@ a{
 	overflow: hidden;
 }
 
-.menu_nav{
-    margin: 0 auto;
-    visibility: hidden;
-    width: 160px;
-    -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-}
-
-.menu_nav:hover{
+.menu:hover{
     visibility: visible;
-    background-color: rgba(61,48,69,.8);  
+    background: rgba(61,48,69,.8);  
 }
 
-.menu_nav:hover .menu_link{
+.menu:hover .menu_link{
     display: block;
 }
 
-.menu_nav:hover .menu_link--initial{
+.menu:hover .menu_link--initial{
     display: block;
     text-shadow: none;
     border: 0;
 }
 
 .menu_item{
+    display: block;
+    text-align: center;
+    width: 100%;
     overflow: hidden;
     background-color: rgba(54, 41, 62, 0.9);
     border-bottom: 1px solid rgba(53, 39, 61, 0.9);
     -webkit-box-shadow: inset 0 -1px 0 rgba(105, 82, 114, 0.59);
-        box-shadow: inset 0 -1px 0 rgba(105, 82, 114, 0.59);  
+    box-shadow: inset 0 -1px 0 rgba(105, 82, 114, 0.59);  
 }
 
 .menu_link{
 	color: #fefefe;
+    text-align: center;
 	font-size: 18px;
 	line-height: 24px;
     height: 24px;
@@ -107,7 +112,6 @@ a{
 .menu_link:hover{
     display: block;
     background-color: #13070C;
-    background-color: rgba(0, 0, 0, 0.3);
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
     border-bottom: 2px solid #edbfff;
 }
@@ -126,6 +130,26 @@ a{
 
 .slider{
     padding: 1px;
+}
+
+.slide_main:before{
+    content: ' ';
+    background: url(../img/sprite.png) 1px -68px no-repeat;
+    position: absolute;
+    left: 10%;
+    top: 16%;
+    width: 25px;
+    height: 45px;
+}
+
+.slide_main:after{
+    content: '';
+    background: url(../img/sprite.png) -26px -68px no-repeat;
+    position: absolute;
+    left: 82%;
+    top: 16%;
+    width: 30px;
+    height: 45px;
 }
 
 .slider_cercl{
@@ -165,6 +189,7 @@ a{
 .slider h3{ 
     color: #ffffff;
     font-size: 32px;
+    padding-left: 1%;
 }
 
 .slide p{
@@ -174,6 +199,7 @@ a{
 .slider h4{
     color: #edbfff;
     font-size: 18px;
+    padding-left: 1%;
 }
 
 .slider_article{
@@ -207,7 +233,7 @@ a{
 }
 
 .company_img{
-    background: url(../img/img-2.png) 3px -32px no-repeat;
+    background: url(../img/sprite.png) -156px -81px no-repeat;
     height: 33px;
     float: left;
     width: 33px;
@@ -259,20 +285,18 @@ a{
 }
 
 .block_article{
-    padding: 1%;
     background-color: #ffffff;
     position: relative;
     left: 50%;
-    -webkit-transform: translate(-50%, 0);
-        transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
     height: 220px;
-    width: 85%;
+    width: 60%;
     overflow: hidden;
 }
 
 .block_article h4{
     padding-left: 30px;
-    font-size: 26px;
+    font-size: 30px;
     text-transform: uppercase;
     text-shadow: 1px 1px #fff;
     white-space: nowrap;
@@ -293,7 +317,7 @@ a{
 }
 
 .article_img{
-    background: url(../img/img-3.png) 0 0 no-repeat;
+    background: url(../img/sprite.png) -65px -175px no-repeat;
     width: 50px;
     height: 50px;
     position: absolute;
@@ -302,17 +326,14 @@ a{
 }
 
 .blog_section{
-    width: 60%;
-    margin-left: 10%;
-    padding: 1%;
+    width: 65%;
+    margin: auto;
     margin-bottom: 5%;
 }
 
 .blog_section h4{
-    text-align: left;
-    font-size: 26px;
+    font-size: 30px;
     font-weight: bold;
-    white-space: nowrap;
 }
 
 .blog_section h5{
@@ -335,7 +356,7 @@ a{
 }
 
 .blog_item{
-    background: url(../img/img-3.png) 0 -57px no-repeat;
+    background: url(../img/sprite.png) 10px -115px no-repeat;
     height: 15%;
     overflow: hidden;
 }
@@ -362,21 +383,21 @@ a{
 }
 
 .ad-link_one{
-    background:url(../img/img-4.png) 0 0px no-repeat;
+    background:url(../img/sprite.png) 0 -300px no-repeat;
     float: left;
     height: 69px;  
     width: 50%;
 }
 
 .ad-link_two{
-    background:url(../img/img-4.png) 0 -75px no-repeat;
+    background:url(../img/sprite.png) -135px -300px no-repeat;
     float: left;
     height: 69px;
     width: 50%;
 }
 
 .ad-link_three{
-    background:url(../img/img-4.png) 0 -150px no-repeat;
+    background:url(../img/sprite.png) -270px -300px no-repeat;
     float: left;
     height: 69px;
     margin-top: 10px;
@@ -384,7 +405,7 @@ a{
 }
 
 .ad-link_four{
-    background:url(../img/img-4.png) 0 -228px no-repeat;
+    background:url(../img/sprite.png) -393px -300px no-repeat;
     float: left;
     height: 69px;
     margin-top: 10px;
@@ -392,7 +413,7 @@ a{
 }
 
 .ad-link_five{
-    background:url(../img/img-4.png) 0 -298px no-repeat;
+    background:url(../img/sprite.png) -527px -320px no-repeat;
     height: 30px;
     float: left;
     margin-top: 10px;
@@ -400,7 +421,7 @@ a{
 }
 
 .ad-link_six{
-    background: url(../img/img-4.png) 0 -336px no-repeat;
+    background: url(../img/sprite.png) -686px -308px no-repeat;
     height: 69px;
     float: left;
     width: 50%;
@@ -409,7 +430,7 @@ a{
 
 .nav_footer{
     clear: both;
-    background: url(../img/img-5.png) top no-repeat;
+    background: url(../img/foot.png) top no-repeat;
     background-size: cover;
 }
 
@@ -426,6 +447,6 @@ a{
 }
 
 .page,
-.footer_menu{
+.menu--footer{
     display: none;
 }

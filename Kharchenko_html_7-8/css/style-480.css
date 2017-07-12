@@ -1,7 +1,8 @@
-@media screen and (min-width: 480px){
+@media all and (min-width: 480px){
 
     .wrapper{ 
-        min-width: 480px;
+       min-width: 480px;
+       max-width: 768px  
     }
 
     .slide_img{
@@ -13,12 +14,12 @@
     .slide_img img{
         max-width: 100%; 
         display: block;
-        margin-top: -7%;
+        margin-top: -10%;
     }
 
     .slide_main{
         padding-top: 40px;
-        width: 65%;
+        width: 55%;
     }
     
     .block_article h4{
@@ -29,6 +30,16 @@
         display: inline; 
     }
     
+    .slide_main:before{
+        left: 5%;
+        top: 20%;
+    }
+
+.slide_main:after{
+        left: 90%;
+        top: 20%;
+    }
+
     .ad_aside{
         width: 65%;   
     }
@@ -43,32 +54,19 @@
 
     .page{
         display: flex;
-        flex-direction: column;
-        align-items: center;
         border-top: 1px solid #d8d8d8;
         background: #ececec;
-        padding-top: 5%;
         font-size: 14px;
         color: #787878;
         text-shadow: 1px 1px #fff;
     }
     
-    .page_group{
-        height: 155px;
-        overflow: hidden;
-        width: 60%;
-        margin-bottom: 5%;
-        padding: 1%; 
-    }
-
-    .page h5{
-        font-family: 'LeagueGothic';
-        font-size: 24px;
-        color: #454545;
+    .pingbull--mod{
+       padding-top: 3%;
+       text-align: left;
     }
     
-    .page_span{
-        font-size: 48px;
+    .pingbull_span--mod{
         color: #b9b9b9;
         text-shadow: 0 1px #fff;
     }
@@ -81,29 +79,43 @@
         text-shadow: 1px 1px #fff;           
     }
     
-    .page p{
-        margin-top: 2%;
-        font-size: 16px;
+    .company_about--mod p{
         color: #787878;
         text-shadow: 1px 1px #fff;  
     }
     
-    .footer_menu{
-        display: flex;
-        justify-content: center;
-        font-family: "Myriad Pro";
-        text-transform: uppercase;
-        text-shadow: 1px 2px 2px rgba(0,0,0,.4);
-        padding-top: 3%;
-    }
-
-    .footer_item{
-        margin-right: 1%;
-    }
-
-    .footer_link{
-        color: #ffffff;
-        font-size: 18px;
+    .company_about--mod h4{
+        color: #454545;  
     }
     
+    .menu--footer{
+        visibility: visible;
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        border: inherit;
+        border-radius: inherit;
+        width: 100%;
+        text-transform: uppercase;
+        padding: 5px;
+    }
+    
+    .menu--footer:hover{
+        background: none;  
+}
+    .menu_item-footer{
+        background-color: transparent;
+        border-bottom: inherit;
+        box-shadow: none;
+    }
+        
+    .menu_link--footer:hover{
+        background-color: transparent;
+        text-shadow: 1px 2px 2px rgba(0,0,0,.4);
+        border-bottom: none;
+}
+
+    .menu_link--footer{
+        color: #ffffff;
+    }
 }

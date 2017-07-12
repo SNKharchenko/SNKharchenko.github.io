@@ -1,16 +1,18 @@
-@media screen and (min-width: 768px){
+@media all and (min-width: 768px){
     
     .wrapper{ 
-        max-width: 768px;
-    }
-
-    .nav{
-	   border: inherit;
-       border: none;
+       min-width: 768px;
+       max-width: 959px
+        
     }
     
-    .menu_nav{
-        display: -webkit-box;
+    .pingbull{
+        text-align: left;
+        padding-top: 15px;
+        margin-left: 15%
+}
+    .menu{
+	    display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-orient: horizontal;
@@ -25,12 +27,12 @@
         border-radius: inherit;
     }
     
-    .menu_nav:hover{
+    .menu:hover{
         background-color: transparent;  
     }
 
     .menu_item{
-        -webkit-box-flex: 1;
+        webkit-box-flex: 1;
             -ms-flex-positive: 1;
             flex-grow: 1;
         background-color: transparent;
@@ -40,7 +42,10 @@
     }
 
     .slide_main{
-        width: 50%;
+        width: 33%;
+        padding-top: 40px;
+        margin-right: 20px;
+        text-align: justify;
     }
 
     .slide p{
@@ -48,8 +53,17 @@
         font-size: 18px;
         color: #ffffff;
         text-align: justify;
-        padding: 2%;
+        padding: 1%;
     }
+    .slide_main:before{
+        left: 10%;
+        top: 25%;
+}
+
+   .slide_main:after{
+        left: 80%;
+        top: 25%;
+}
     
     .company{
         -webkit-box-orient: horizontal;
@@ -77,12 +91,7 @@
         display: flex;
             -ms-flex-pack: distribute;
         justify-content: space-around;
-        width: 100%;      
-    }
-    
-    .article_img{
-        top: 12%;
-        left: 3%;
+        width: 100%;           
     }
     
     .main_block{
@@ -92,26 +101,14 @@
         width: 60%; 
     }
     
-    .block_article h4{
-        padding-left: 0;
-    }
-    
-    .block_article{
-        width: 90%;
-}
-    
     .blog_section{
         -webkit-box-flex: 1;
             -ms-flex-positive: 1;
             flex-grow: 1;
-        width: 50%;
-        margin-right: 1%;
+        width: 40%;
+        margin-right: 6%;
     }
     
-    .blog_section p{
-        height: 78px;
-    }
-
     .ad_aside{
         width: 80%;   
     }
@@ -119,31 +116,10 @@
     .ad-link{
        width: 16%; 
     }
+    
+    .pingbull--mod{
+       text-align: left;
+    margin-left: 0;
+    }
 
-    .ad-link_five{
-       width: 18%; 
-    }
-    
-    .page{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-            flex-direction: row;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-        padding: 1% 1% 0 1%;
-    }
-    
-    .page_group{
-       margin-right: 1%;
-       margin-bottom: 50px;
-    } 
-   
-     .footer_item{
-        margin-right: 2%;
-    }
 }
